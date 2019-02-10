@@ -1,0 +1,37 @@
+.header {
+  height: 95vh;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 10rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header .dipen {
+  color: greenyellow;
+  font-size: 100px;
+  display: flexbox;
+  padding: 100px;
+  height: 100px;
+  margin: 10px;
+}
+/*# sourceMappingURL=main.css.map */

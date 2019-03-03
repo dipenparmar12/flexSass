@@ -4,13 +4,13 @@ const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat'); 
-
 /*
-	--Basic Functons	
+	--Basic Functons
 	gulp.task  	// Define Tasks
 	gulp.src  	// Point Tofiles to use
 	gulp.dest 	// Points to folder to output
 	gulp.watch 	// Watch files and folders for Changes 
+
 */
 
 
@@ -75,31 +75,11 @@ gulp.task('script', ()=>{
 	  .pipe(gulp.dest('dist/js'));
    return console.log
     ("Js files minified successfully");
-
 });
 
 
-
-// gulp.task('default',['script','imagemin'],function(){
-// 	return console.log("Default");
-// });
-
 // Default Gulp-Task
-// gulp.task('default',['script'],()=>{
+// gulp.task('default',()=>{
 //    return console.log
 //     ("Default Task");
 // });
-
-
-
-// npm install
-// npm install -g gulp 
-// npm init
-// mkdir src dist
-
-// npm install --save-dev gulp
-// npm install --save-dev gulp-changed
-// npm install --save-dev gulp-imagemin
-// npm install --save-dev gulp-uglify
-// npm install --save-dev gulp-sass
-// npm install --save-dev gulp-concat

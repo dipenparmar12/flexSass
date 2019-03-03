@@ -1,0 +1,7 @@
+npm install
+npm install -g gulp 
+npm init
+
+mkdir src dist
+
+npm install --save-dev gulp

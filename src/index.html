@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Index Html</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
+<style>
+    *{
+        background-color: rgb(214, 214, 214);
+        color: rgb(12, 12, 12);
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    section.container {
+        background-color: rgba(199, 199, 199,0.5);
+        padding: 10px;
+
+        height: 500px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    div[class^="item"] {
+        background-color: rgba(255, 10, 125,1);
+        padding: 25px;
+        font-size: 25px;
+    }
+
+</style>
+
 <body>
-	
+    <section class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </section>
 </body>
+
 </html>

@@ -1,27 +1,21 @@
 {
   "name": "flexsass",
   "version": "1.0.0",
-  "description": "FlexSass Project For Mscit it-sem 2 ( i Am making project on Sass Front-End webTemplate )",
-  "main": "index.js",
+  "description": "Mscit It Sem-2 FrontEnd Project",
+  "main": "gulpfile_.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass src/sass/main.scss dist/css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass src/sass/main.scss dist/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/css/style.comp.css -o src/css/style.prefix.css",
+    "compress:css": "node-sass src/css/style.prefix.css dist/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dipenparmar12/flexSass.git"
   },
-  "keywords": [
-    "FlexSass",
-    "Css",
-    "FrontEnd",
-    "Node",
-    "Npm",
-    "Gulp",
-    "WebPack",
-    "Cmder",
-    "Git",
-    "VsCode"
-  ],
   "author": "Dipends",
   "license": "ISC",
   "bugs": {
@@ -29,17 +23,10 @@
   },
   "homepage": "https://github.com/dipenparmar12/flexSass#readme",
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
-    "gulp-changed": "^3.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-csso": "^3.0.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-live-server": "0.0.31",
-    "gulp-run-sequence": "^0.3.2",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2",
-    "imagemin": "^6.1.0"
+    "node-sass": "^4.11.0",
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1"
   }
 }

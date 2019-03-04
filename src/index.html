@@ -7,43 +7,60 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <style>
     *{
         background-color: rgb(214, 214, 214);
         color: rgb(12, 12, 12);
+        font-weight: 300;
         box-sizing: border-box;
         padding: 0;
         margin: 0;
     }
-    
     section.container {
         background-color: rgba(199, 199, 199,0.5);
         padding: 10px;
 
-        height: 500px;
+        height: 550px;
 
-        display: flex;
+        display: flex;   
         flex-direction: row;
-        justify-content: space-evenly;
+        align-items: stretch;
+        justify-content: space-between;
     }
-
     div[class^="item"] {
+        border: 0.5px solid rgb(235, 232, 232);
         background-color: rgba(255, 10, 125,1);
         padding: 25px;
         font-size: 25px;
     }
-
+    .item3{
+        font-size: 70px !important;
+    }
+    .container.two{
+        height: 380px;
+        background-color: bisque;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .two .item{
+        color: #000;
+        background-color: rgb(255, 198, 41);
+    }
 </style>
-
 <body>
     <section class="container">
         <div class="item1">1</div>
         <div class="item2">2</div>
         <div class="item3">3</div>
         <div class="item4">4</div>
-        <div class="item5">5</div>
+    </section>
+
+    <section class="container two">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
     </section>
 </body>
-
 </html>

@@ -15,14 +15,14 @@ const concat = require('gulp-concat');
 
 
 // Log Msg
-gulp.task('msg', ()=>{
+gulp.task('msg', function(){
     return console.log("Hello World");
 });
 
 
 
 // Copy Src to Dest All HTML files 
-gulp.task('copyHTML', ()=>{
+gulp.task('copyHTML', function(){
 	gulp.src('src/**/*.html')
      .pipe(gulp.dest('dist/'));
 
@@ -33,7 +33,7 @@ gulp.task('copyHTML', ()=>{
 
 
 // Minify JavaScript
-gulp.task('minjs', ()=>{
+gulp.task('minjs', function(){
 	gulp.src('src/js/**/*.js')
 	  .pipe(uglify())
 	  .pipe(gulp.dest('dist/js'));
@@ -44,7 +44,7 @@ gulp.task('minjs', ()=>{
 
 
 // Image Minify 
-gulp.task('imagemin', ()=>{
+gulp.task('imagemin', function(){
 	var imgSrc = 'src/img/*.+(png|jpg|gif)';
    	var imgDst = 'dist/img';
    
@@ -57,7 +57,7 @@ gulp.task('imagemin', ()=>{
 
 
 // Sass Compile 
-gulp.task('sass', ()=>{
+gulp.task('sass', function(){
 	var sass_Src = 'src/sass/*.scss';
    	var sass_Dst = 'dist/css';
    
@@ -68,7 +68,7 @@ gulp.task('sass', ()=>{
 
 
 // JavaScript Minify + concat  
-gulp.task('script', ()=>{
+gulp.task('script', function(){
 	gulp.src('src/js/**/*.js')
 	  .pipe(concat('main.js'))
 	  .pipe(uglify())
@@ -84,11 +84,11 @@ gulp.task('script', ()=>{
 // 	return console.log("Default");
 // });
 
-// Default Gulp-Task
-// gulp.task('default',['script'],()=>{
-//    return console.log
-//     ("Default Task");
-// });
+// //Default Gulp-Task
+gulp.task('default',['script'],function(){
+   return console.log
+	  ("Default Task");
+});
 
 
 

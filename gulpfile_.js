@@ -1,9 +1,10 @@
 const gulp = require('gulp');
-const changed = require('gulp-changed');
-const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
-const sass = require('gulp-sass');
 const concat = require('gulp-concat'); 
+const sass = require('gulp-sass');
+
+// const changed = require('gulp-changed');
+// const imagemin = require('gulp-imagemin');
 
 /*
 	--Basic Functons	
@@ -15,91 +16,77 @@ const concat = require('gulp-concat');
 
 
 // Log Msg
-gulp.task('msg', function(){
+gulp.task('msg', ()=>{
     return console.log("Hello World");
 });
 
 
-
 // Copy Src to Dest All HTML files 
-gulp.task('copyHTML', function(){
+gulp.task('html', ()=>{
 	gulp.src('src/**/*.html')
-     .pipe(gulp.dest('dist/'));
-
+		 .pipe(gulp.dest('dist/'));
+		 
    return console.log
-    ("Html Files Copied successfully to dist Folder");
+    ("Html Files Copiedb successfully to dist Folder");
 
 });
 
 
-// Minify JavaScript
-gulp.task('minjs', function(){
-	gulp.src('src/js/**/*.js')
-	  .pipe(uglify())
-	  .pipe(gulp.dest('dist/js'));
-   return console.log
-    ("Js files minified successfully");
-
+// // JavaScript Minify + concat
+gulp.task('jsmin', ()=>{
+	var jsSrc = 'src/js/**/*.js',
+			jsDist = 'dist/js';
+			
+	gulp.src(jsSrc)
+		.pipe(concat('scripts_bundle.min.js'))
+		.pipe(uglify())
+	  .pipe(gulp.dest(jsDist));
+	 return console.log
+	 ("Js files minified & Concat successfully to ScriptsBundle.min.js File");
+	// var jsSrc = 'src/img/*.+(png|jpg|gif)';
 });
 
-
-// Image Minify 
-gulp.task('imagemin', function(){
-	var imgSrc = 'src/img/*.+(png|jpg|gif)';
-   	var imgDst = 'dist/img';
-   
-	gulp.src(imgSrc)
-	.pipe(changed(imgDst))
-	.pipe(imagemin())
-	.pipe(gulp.dest(imgDst));
+// Minify JavaScript 
+gulp.task('js', ()=>{
+	var jsSrc = 'src/js/**/*.js',
+			jsDist = 'dist/js/';
+			
+	gulp.src(jsSrc)
+		.pipe(uglify())
+	  .pipe(gulp.dest(jsDist));
+	 return console.log
+	 ("Js files minified successfully to dist/Js Direcotry");
 });
 
 
 
 // Sass Compile 
-gulp.task('sass', function(){
+gulp.task('sass', ()=>{
 	var sass_Src = 'src/sass/*.scss';
-   	var sass_Dst = 'dist/css';
-   
+		 var sass_Dst = 'dist/css';
+
 	gulp.src(sass_Src)
 	.pipe(sass().on('error',sass.logError))
 	.pipe(gulp.dest(sass_Dst));
 });
 
 
-// JavaScript Minify + concat  
-gulp.task('script', function(){
-	gulp.src('src/js/**/*.js')
-	  .pipe(concat('main.js'))
-	  .pipe(uglify())
-	  .pipe(gulp.dest('dist/js'));
-   return console.log
-    ("Js files minified successfully");
+gulp.task('default', gulp.parallel('html','jsmin','sass'));
 
+
+// Rerun the task when a file changes
+gulp.task('dev', function () {
+  	gulp.watch('src/js/**/*.js', ['jsmin']);
 });
 
 
 
-// gulp.task('default',['script','imagemin'],function(){
-// 	return console.log("Default");
+//---------------------
+//--- Image Minify-----
+//---------------------
+// gulp.task('imagemin', ()=>{
+// 	gulp.src(imgSrc)
+// 	.pipe(changed(imgDst))
+// 	.pipe(imagemin())
+// 	.pipe(gulp.dest(imgDst));
 // });
-
-// //Default Gulp-Task
-gulp.task('default',['script'],function(){
-   return console.log
-	  ("Default Task");
-});
-
-
-
-// npm install
-// npm install -g gulp 
-// npm init
-// mkdir src dist
-
-// npm install --save-dev gulp
-// npm install --save-dev gulp-changed
-// npm install --save-dev gulp-imagemin
-// npm install --save-dev gulp-uglify
-// npm install --save-dev gulp-sass
-// npm install --save-dev gulp-concat

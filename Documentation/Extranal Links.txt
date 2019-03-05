@@ -1,2 +1,7 @@
 // Learn FlexBox by Game
 https://flexboxfroggy.com/
+
+
+// Google Fonts
+https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans:300,700
+

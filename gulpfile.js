@@ -1,79 +1,117 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
+// const { series, parallel } = require('gulp');
 
-// var babel = require('gulp-babel');
-// var rename = require('gulp-rename');
-// var cleanCSS = require('gulp-clean-css');
-// var del = require('del');
+// function clean(cb) {
+//   // body omitted
+//   cb();
+// }
+
+// function cssTranspile(cb) {
+//   // body omitted
+//   cb();
+// }
+
+// function cssMinify(cb) {
+//   // body omitted
+//   cb();
+// }
+
+// function jsTranspile(cb) {
+//   // body omitted
+//   cb();
+// }
+
+// function jsBundle(cb) {
+//   // body omitted
+//   cb();
+// }
+
+// function jsMinify(cb) {
+//   // body omitted
+//   cb();
+// }
+
+// function publish(cb) {
+//   // body omitted
+//   cb();
+// }
+
+// function build(cb) {
+//   // body omitted
+//   cb();
+// }
+
+// const { watch } = require('gulp');
+// const watcher = watch(['src/**/*.html']);
+
+// watcher.on('change', function(path, stats) {
+//   console.log(`File ${path} was changed`);
+// });
+
+// watcher.on('add', function(path, stats) {
+//   console.log(`File ${path} was added`);
+// });
+
+// watcher.on('unlink', function(path, stats) {
+//   console.log(`File ${path} was removed`);
+// });
+
+// watcher.close();
+
+// exports.build = series(clean, parallel( cssTranspile, series(jsTranspile, jsBundle) ),
+// 							  parallel( cssMinify, jsMinify), publish
+// );
+
+// exports.default = series(clean, build);
 
 
+
+
+//  npm install --save-dev gulp -g
+//  npm install --save-dev gulp-sass
+
+
+// gulpfile.js
+
+var gulp = require("gulp");
+var sass = require("gulp-sass");
 var paths = {
-	html:{
-		src:"src/**/*.html",
-		dest:"dest/"
-	},
-	styles:{
-		src:"src/sass/**/*.scss",
-		dest:"dest/assets/style/"
-	},
-	scripts:{
-		src:"src/script/**/*.js",
-		dest:"dest/assets/script/"
-	}
+	html:{src:"src/**/*.html", dest:"dest/" },
+	styles:{ src:"src/sass/**/*.scss", dest:"dest/assets/style/" },
+	scripts:{ src:"src/script/**/*.js", dest:"dest/assets/script/" }
 };
 
 
-// function clean(){
-// 	return del(['assets']);
-// }
 
-
-
-// Html minify
-function html(){
-	return gulp.src(paths.html.src)
-		.pipe(gulp.dest(paths.html.dest));
+// Define tasks after requiring dependencies
+function style() {
+    // Where should gulp look for the sass files?
+    // My .sass files are stored in the styles folder
+    // (If you want to use scss files, simply look for *.scss files instead)
+    return (
+        gulp
+            .src(paths.styles.src)
+ 
+            // Use sass with the files found, and log any errors
+            .pipe(sass())
+            .on("error", sass.logError)
+ 
+            // What is the destination for the compiled file?
+            .pipe(gulp.dest(paths.styles.dest))
+    );
 }
+// Expose the task by exporting it
+// This allows you to run it from the commandline using
+// $ gulp style
+exports.style = style;
+// CLI Command
+// gulp style
 
-
-// Sass Assets Complilation
-function styles(){
-	return gulp.src(paths.styles.src)
-		.pipe(sass())
-		// .pipe(clearCSS())		
-		// .pipe(rename(){
-			// basename: "main",
-			// suffix:".min"
-		// })
-		.pipe(gulp.dest(paths.styles.dest));
-}
-
-
-// SCript Compilation
-function scripts(){
-	return gulp.src(paths.scripts.src)
-		.pipe(uglify())
-		.pipe(concat('main.min.js'))
-		.pipe(gulp.dest(paths.scripts.dest));
-}
-
-// Watch Both Sass & JS scripts 
+// to Set Watch()
 function watch(){
-	gulp.watch(paths.styles.src, styles);
-	gulp.watch(paths.scripts.src, scripts);
-	gulp.watch(paths.html.src, html);
+    // gulp.watch takes in the location of the files to watch for changes
+    // and the name of the function we want to run on change
+    gulp.watch(paths.styles.src, style)
 }
-
-
-// exports.clean = clean;
-exports.html = html;
-exports.styles = styles;
-exports.scripts = scripts;
-exports.watch = watch;
-
-var build = gulp.series(gulp.parallel(html,styles,scripts));
-
-gulp.task('build',build);
-gulp.task('watch',build);
+   
+// Don't forget to expose the task!
+exports.watch = watch

@@ -1,1 +1,1 @@
-gulp dev
+gulp watch

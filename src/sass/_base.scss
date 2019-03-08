@@ -1,3 +1,13 @@
+body{
+   //background-color: hotpink;
+   background-color: green;
+   //background-color: red;
+   color:red;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
+   line-height: 1.6;
+}
+
 *{
    margin: 0;
    padding: 0;
@@ -13,12 +23,3 @@ html{
    box-sizing: border-box;
    font-size: 62.5% // 1rem = 10px, 10px/16px = 62%;
 }
-
-body{
-   font-family: 'Open Sans', sans-serif;
-   font-weight: 400;
-   line-height: 1.6;
-   //background-color: hotpink;
-   //background-color: green;
-}
-

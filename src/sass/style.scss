@@ -1,0 +1,52 @@
+/* Basic Styles () */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font: normal 16px sams-serif;
+}
+
+a{
+    opacity: .75;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+nav{
+    list-style: none;
+}
+
+
+/* -------------- */
+/* header Style */
+/* -------------- */
+
+header{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 10rem 0;
+    background-color: rgb(5, 97, 5);
+}
+
+header h2{
+    font-family: "Quicksand", sans-serif;
+    background-color: rgb(7, 170, 7);
+}
+
+header nav{
+    display: flex;
+    margin-right: -15px;
+    background-color: rgb(8, 213, 8);
+}
+
+header nav li{
+    margin:  0 1.3rem;
+    background-color: rgb(135, 252, 126);
+}

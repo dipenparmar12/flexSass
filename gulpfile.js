@@ -1,62 +1,12 @@
-// const { series, parallel } = require('gulp');
-
-// function clean(cb) {
-//   // body omitted
-//   cb();
-// }
-
-// function cssTranspile(cb) {
-//   // body omitted
-//   cb();
-// }
-
-// function cssMinify(cb) {
-//   // body omitted
-//   cb();
-// }
-
-// function jsTranspile(cb) {
-//   // body omitted
-//   cb();
-// }
-
-// function jsBundle(cb) {
-//   // body omitted
-//   cb();
-// }
-
-// function jsMinify(cb) {
-//   // body omitted
-//   cb();
-// }
-
-// function publish(cb) {
-//   // body omitted
-//   cb();
-// }
-
-// function build(cb) {
-//   // body omitted
-//   cb();
-// }
-
-// exports.build = series(clean, parallel( cssTranspile, series(jsTranspile, jsBundle) ),
-// 							  parallel( cssMinify, jsMinify), publish
-// );
-
-// exports.default = series(clean, build);
-
-
-
-
 //  npm install --save-dev gulp -g
 //  npm install --save-dev gulp-sass
 //  npm install --save-dev gulp-postcss autoprefixer cssnano gulp-sourcemaps
 //  npm install --save-dev browser-sync
 // 	npm install --save-dev gulp-htmlmin
+// 	npm i --save-dev gulp-imagemin
 //  ---OR---
 // 	All on one File
-// 	npm i --save-dev gulp gulp-sass gulp-postcss autoprefixer cssnano gulp-sourcemaps browser-sync gulp-htmlmin
+// 	npm i --save-dev gulp gulp-sass gulp-postcss autoprefixer cssnano gulp-sourcemaps browser-sync gulp-htmlmin gulp-imagemin
 
 // gulpfile.js
 var gulp = require("gulp"),
@@ -66,9 +16,11 @@ var gulp = require("gulp"),
     cssnano = require("cssnano"),
     autoprefixer = require("autoprefixer"),
     sourcemaps = require("gulp-sourcemaps"),
+	rename = require('gulp-rename'),
     //for_JavaScript
 	concat = require('gulp-concat'),
-	uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify');
+    imagemin = require('gulp-imagemin');
 
 var browserSync = require("browser-sync").create();
 
@@ -77,7 +29,8 @@ var src="src/", dest="dest/";
 var paths = {
 	html:{src: src+"**/*.html", dest:dest },
 	styles:{ src: src+"sass/**/*.scss", dest:dest+"assets/style/" },
-	scripts:{ src: src+"script/**/*.js", dest:dest+"assets/script/" }
+	scripts:{ src: src+"script/**/*.js", dest:dest+"assets/script/" },
+	img:{ src: src+"img/**/*", dest:dest+"assets/img/" }
 };
 
 // Html minify
@@ -100,6 +53,7 @@ function style() {
             .on("error", sass.logError)
             // Use postcss with autoprefixer and compress the compiled file using cssnano
             .pipe(postcss([autoprefixer(), cssnano()]))
+            .pipe(rename({ basename: "style", suffix:".min"}))
             // Now add/write the sourcemaps
             .pipe(sourcemaps.write())
             .pipe(gulp.dest(paths.styles.dest))
@@ -126,6 +80,18 @@ exports.js = js;
 
 
 
+// images minify
+function img(){
+    return gulp.src(paths.img.src)
+        .pipe(imagemin([
+            // imagemin.jpegtran({progressive: true}),
+            // imagemin.optipng({optimizationLevel: 5})
+        ]))
+		.pipe(gulp.dest(paths.img.dest));
+} exports.img = img;
+
+
+
 // A simple task to reload the page
 function reload() {
     browserSync.reload();
@@ -137,7 +103,7 @@ function watch() {
     browserSync.init({
         // You can tell browserSync to use this directory and serve it as a mini-server
         server: {
-            baseDir: "./"
+            baseDir: "./"+dest
         }
         // If you are already serving your website locally using something like apache
         // You can use the proxy setting to proxy that instead
@@ -146,7 +112,7 @@ function watch() {
 
     // gulp.watch takes in the location of the files to watch for changes
     // and the name of the function we want to run on change
-    gulp.watch(src+"**/*",gulp.series(style,html,script));
+    gulp.watch(src+"**/*",gulp.series(style,html,script,img));
 
     // We should tell gulp which files to watch to trigger the reload
     // This can be html or whatever you're using to develop your website
@@ -155,4 +121,75 @@ function watch() {
 }
 // Don't forget to expose the task!
 exports.watch = watch;
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* {
+    // const { series, parallel } = require('gulp');
+
+    // function clean(cb) {
+    //   // body omitted
+    //   cb();
+    // }
+
+    // function cssTranspile(cb) {
+    //   // body omitted
+    //   cb();
+    // }
+
+    // function cssMinify(cb) {
+    //   // body omitted
+    //   cb();
+    // }
+
+    // function jsTranspile(cb) {
+    //   // body omitted
+    //   cb();
+    // }
+
+    // function jsBundle(cb) {
+    //   // body omitted
+    //   cb();
+    // }
+
+    // function jsMinify(cb) {
+    //   // body omitted
+    //   cb();
+    // }
+
+    // function publish(cb) {
+    //   // body omitted
+    //   cb();
+    // }
+
+    // function build(cb) {
+    //   // body omitted
+    //   cb();
+    // }
+
+    // exports.build = series(clean, parallel( cssTranspile, series(jsTranspile, jsBundle) ),
+    // 							  parallel( cssMinify, jsMinify), publish
+    // );
+
+    // exports.default = series(clean, build);
+
+  } */

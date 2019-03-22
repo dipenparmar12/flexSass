@@ -123,3 +123,7 @@ function watch() {
 exports.watch = watch;
 
 
+// Default Task for gulp commnad 
+// just wirte "gulp" word in CLI for staring service
+
+gulp.task('default',watch);

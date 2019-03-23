@@ -15,7 +15,6 @@
 
 
 :root{
-
     --color-primary:    #93eb2f;
     --color-primary-light:  rgb(207, 255, 51);
     --color-primary-dark:   rgb(105, 186, 38);
@@ -28,8 +27,8 @@
     --color-grey-dark-1:    #333;
     --color-grey-dark-2:    #777;
     --color-grey-dark-3:    #999;
-    --color-grey-dark--:    #666;
-    --color-grey-dark---:    #555;
+    --color-grey-dark1:    #666;
+    --color-grey-dark2:    #555;
 
 }
 
@@ -45,11 +44,14 @@ html{
     font-size: 62.5%; // 1rem == 10px?   #10px/16px=62.5%
 }
 body{
+    
     font-family: "Open-sans", sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--color-grey-dark-2);
     font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-grey-dark-2);
+
+    line-height: 1.6;    
+
     background-image: 
         linear-gradient(to right bottom,
             var(--color-primary-light),var(--color-primary-dark)
@@ -57,5 +59,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 
-    min-height: 100vh;    
+    min-height: 90vh;
+    
 }

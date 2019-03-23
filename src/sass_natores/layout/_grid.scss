@@ -1,0 +1,51 @@
+ .row{
+    
+    max-width: $grid-width;
+    margin: 0 auto;
+    padding: 7rem;
+    //height: $gutter-horizontal;
+
+    // alpply all styles exept last child .. advance css
+    &:not(:last-child){
+        margin-bottom: $gutter-horizontal;
+    }
+    
+        @include clearfix;
+
+        // Select all class that start from col- words and apply styles 
+        [class^="col-"]{
+            //background-color: rgba(216, 216, 216, 0.288);
+            float: left;
+            &:not(:last-child){
+                margin-right: $gutter-vertical;
+            }
+        }
+
+        .col-1-of-2{
+            width: calc(  ( 100% - #{$gutter-vertical} ) / 2 );
+        }
+
+        .col-1-of-3{
+            width: calc( ( 100% - 2 * #{$gutter-vertical}  ) / 3 );
+        }
+
+        .col-2-of-3{
+            // 1-of-3 * 2 plus gutter-vertical
+            width: calc( ( 2 * (100% - 2 * #{$gutter-vertical}  ) / 3 ) + #{$gutter-vertical} ) ;
+        }
+
+        .col-1-of-4{
+            width: calc(  (100% - #{$gutter-vertical} * 3 ) / 4 ) ;
+        }
+
+        .col-2-of-4 {
+            // 1-of-4 and  multiply by 2 plus add gutter-vertical
+            width: calc( 2 * ( (100% - #{$gutter-vertical} * 3 ) / 4 ) + #{$gutter-vertical}  ); 
+        }
+
+        .col-3-of-4{
+            width: calc(  ((100% - #{$gutter-vertical} * 3 ) / 4 ) * 3 + (#{$gutter-vertical} *2 ));
+        }
+
+
+}

@@ -1,0 +1,22 @@
+* go dir * 
+cd c:\\xampp\htdocs\css
+
+* creating folder * 
+mkdir temp    
+
+* creating multiple folder * 
+mkdir temp1 css scss admin user
+
+* goto dir * 
+cd temp
+
+* Creating File  * 
+cd.> temp.txt
+
+
+* back to folder* 
+cd.> ..\
+
+* Clear screen * 
+cls
+

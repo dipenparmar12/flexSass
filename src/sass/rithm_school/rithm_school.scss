@@ -1,5 +1,30 @@
 @import "../include/base";
 
-*{
-    background-color: lightblue;
+.container{
+    border: 7px solid #ccc;
+    display: flex;
+    flex-direction:column;
 }
+
+.box{
+    padding: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+.box-1{ background-color: red; }
+.box-2{ background-color: rgb(255, 108, 10); }
+.box-3{ background-color: rgb(255, 157, 0); }
+.box-4{ background-color: rgb(255, 194, 28); }
+.box-5{ background-color: rgb(229, 255, 0); }
+.box-6{ background-color: rgb(179, 255, 0); }
+.box-7{ background-color: rgb(0, 255, 157); }
+.box-8{ background-color: rgb(0, 119, 255); }
+.box-9{ background-color: rgb(132, 0, 255); }

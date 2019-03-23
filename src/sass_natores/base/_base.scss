@@ -1,0 +1,19 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+  }
+
+html{
+// broser default value set to 10px = 1rem // if user change the browser setting then 1 rem will be chaged automatecly
+     font-size: 65.62%; 
+    /* font-size: 10px; */
+}
+
+body {
+    box-sizing: border-box; 
+}
+

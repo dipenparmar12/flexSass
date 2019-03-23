@@ -1,5 +1,6 @@
 .main-contenter{
-    width: 120rem;
+    // width: 120rem;
+    width: 90rem;
     margin: 5rem auto;
     min-height: 80rem;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.394);
@@ -13,6 +14,10 @@
 
 .header{
     background-color: #fff;
+    display: flex;  
+
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sidebar{
@@ -21,6 +26,11 @@
 }
 
 .content{
-    background-color:#777;
+    background-color: red;
     flex:1;
 }
+
+.search_icon{
+    height: 2rem;
+}
+

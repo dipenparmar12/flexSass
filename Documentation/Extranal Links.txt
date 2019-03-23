@@ -10,3 +10,10 @@ https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans:300,700
 https://goede.site/setting-up-gulp-4-for-automatic-sass-compilation-and-css-injection
 https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a
 
+
+// SVG ICONS
+https://icomoon.io/
+
+
+// onLine any to any converter 
+http://beautifytools.com/csv-to-sql-converter.php

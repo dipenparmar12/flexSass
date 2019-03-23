@@ -26,11 +26,26 @@
 
     --color-grey-dark-1:    #333;
     --color-grey-dark-2:    #777;
-    --color-grey-dark-3:    #999;
+    --color-grey-dark-3:    rgb(151, 150, 150);
     --color-grey-dark1:    #666;
     --color-grey-dark2:    #555;
-
 }
+
+$color-primary:    #93eb2f;
+$color-primary-light:  rgb(207, 255, 51);
+$color-primary-dark:   rgb(105, 186, 38);
+
+$color-grey-light-1:   #faf9f9;
+$color-grey-light-2:   #f4f2f2;
+$color-grey-light-3:   #f0eeee;
+$color-grey-light-4:   #ccc;
+
+$color-grey-dark-1:    #333;
+$color-grey-dark-2:    #777;
+$color-grey-dark-3:    #999;
+$color-grey-dark1:    #666;
+$color-grey-dark2:    #555;
+
 
 *,
 *::after,

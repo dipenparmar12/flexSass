@@ -1,0 +1,66 @@
+
+.footer {
+    background-color:$color-gray-light3;
+    padding: 10rem 0 ;
+    font-size: 1.4rem;
+
+    
+    // Navigation List you can use this format as well as 
+    &__link{
+        &,
+        &:link,
+        &:visited{
+            color:$color-gray-light1;    
+            background-color:$color-gray-light3;
+            text-decoration: none;    
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:active,
+        &:hover {
+            color: $color-primary;
+            box-shadow: 0 0.9rem 2rem rgba($color-primary, .3);
+            transform: rotate(5deg) scale(1.3);
+        }
+        
+    }
+
+    &__list{
+        list-style-type: none;
+
+    }
+    
+    &__item{
+        display: inline-block;
+
+        &:not(:last-child){
+            margin-right: 0.9rem;
+        }
+
+    }
+
+    &__logo-box{
+        text-align: center;
+    }
+
+    &__logo{
+        width: 14rem;
+        height: auto;
+    }
+
+    &__navigation{
+        border-top: 2px solid $color-gray-outline ;
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+    &__copyright{
+        border-top: 2px solid $color-gray-outline ;
+        padding-top: 2rem;
+        width: 87%;
+        display: inline-block;
+        float: right;
+    }
+}

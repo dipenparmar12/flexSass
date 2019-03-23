@@ -1,0 +1,112 @@
+// .btn-format-temp{
+//     &:link,
+//     &:visited{
+
+//     }
+
+//     &:hover{
+
+//     }
+
+//     &:active{
+
+//     }
+// }
+
+
+
+.btn{
+    &,
+    &:link,
+    &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+
+    //for button 
+    cursor: pointer;
+    border: none;
+    }
+
+    &:hover{
+    transform: translatey(-0.3rem);
+    box-shadow: 0 10px 20px rgba($color-black, 0.3);
+        &::after{
+        transform: scaley(1.5) scalex(1.5);
+        opacity: 0;
+        }
+    }
+    &:active{
+    transform: translatey(-0.1rem);
+    box-shadow: 0 0.2rem 2rem rgba($color-black, 0.3);
+    }
+    
+    &--white{
+    background-color: $color-white;
+    color: $color-gray;
+
+        &::after{
+        background-color: $color-white;
+        }
+    }
+    
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+    
+            &::after{
+            background-color: $color-primary;
+            }
+        }
+        
+
+    &::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    }
+    
+    &--animated{
+    animation: moveInBottom 0.5s ease-out 0.75s; 
+    animation-fill-mode: backwards;
+    }
+
+}  
+ 
+.btn-text{
+    &:link,
+    &:visited,{    
+    font-size: $default-font-size;
+    color: $color-red;
+    font-weight: 400;
+    padding: .7rem;
+    text-decoration: none;
+    border-bottom: 2px solid $color-primary;
+    transition: all .3s;
+    display: inline-block;
+    }
+
+    &:hover{
+        transform: translate(10px);
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 1.7rem rgba($color-black,0.26);
+    }    
+    &:active{
+        box-shadow: 0 .5rem 1rem rgba($color-black,0.26);
+        transform: translate(10px) translatey(3px);
+        background-color: rgba($color-black,0.26);
+    }
+
+}

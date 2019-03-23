@@ -1,21 +1,25 @@
-.container{
-    border: 7px solid #ccc;
-    display: flex;
-    flex-direction:column;
-}
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-.box{
-    padding: 10px;
-    font-size: 20px;
-    color: #ffffff;
-}
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-.box-1{ background-color: red; }
-.box-2{ background-color: rgb(255, 108, 10); }
-.box-3{ background-color: rgb(255, 157, 0); }
-.box-4{ background-color: rgb(255, 194, 28); }
-.box-5{ background-color: rgb(229, 255, 0); }
-.box-6{ background-color: rgb(179, 255, 0); }
-.box-7{ background-color: rgb(0, 255, 157); }
-.box-8{ background-color: rgb(0, 119, 255); }
-.box-9{ background-color: rgb(132, 0, 255); }
+@import "components/bg-video";
+@import "components/button";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/footer";
+@import "components/section-book";
+@import "components/_stories-jpg";
+@import "components/story";
+
+@import "layout/header";
+@import "layout/grid.scss";
+
+@import "pages/home";
+
+

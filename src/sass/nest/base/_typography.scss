@@ -1,0 +1,65 @@
+body {
+    font-family: "Lota", sans-serif;
+    font-weight: 200;
+    font-size: $default-font-size;
+    color: gray;
+    padding: 20px;
+}
+
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 6rem;
+
+    &--main{
+        display: block;
+        font-size: 4.5rem;
+        font-weight: 200;
+        letter-spacing: 2rem;
+        animation: moveInLeft 1.5s ease-out;
+         /* animation-delay: 2s; 
+          animation-iteration-count: 3;
+         */
+      }
+      &--sub{
+        display: block;
+        font-size: $default-font-size;
+        font-weight: 400;
+        letter-spacing: 1.3rem;
+        animation: moveInRight 1.5s;
+        animation-timing-function: ease-out;
+      }
+}
+
+.heading-secondary{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    background-image: linear-gradient(to right , $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .31s;
+
+    &:hover{
+        letter-spacing: 1.4px;
+        transform: skew(15deg,2deg) scale(1.05);
+        text-shadow: 5px 10px 20px rgba($color-black, 0.20);
+    }
+}
+
+.heading-tertiary{
+    font-size: $default-font-size;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.paragraph{
+    font-size: $default-font-size;
+    &:not(:last-child){
+    margin-bottom:3rem;
+    }
+}

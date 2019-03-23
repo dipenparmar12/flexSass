@@ -1,0 +1,59 @@
+.section-about{
+    background-color: $color-gray-light1;
+    padding: 19rem 0;
+    margin-top: -20vh;
+}
+
+.section-features {
+    padding: 8rem 0;
+    margin-top: -15rem;
+    background-image:linear-gradient(   to top left,
+                    rgba($color-primary-dark,.6),
+                    rgba($color-primary-light,0.7)  ),
+                    url(../../../assets/img/wall4.jpg),;
+    background-size: cover;                    
+    transform: skewy(-6deg);
+    // Select all direct elements in this case select direct class row from  div 
+    & > * {
+        transform: skewy(6deg);
+    }
+}
+
+.section-tours{
+    background-color: $color-gray-light1;
+    margin-top: -10rem;
+    padding: 19rem 0 6rem 0 ;
+    text-align: center;
+
+
+}
+
+.section-stories{
+    position: relative;
+    background-size: cover;                         
+    padding: 4rem 0;
+    
+}
+
+// Mine
+.section-story-jpg{
+    height: 100%;
+    background-color:#eee;
+    background-image: url("../../img/jay.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-top: -16rem;
+    
+}
+
+.section-book{
+    position: relative;
+    padding: 1rem 7rem ;
+    background-image:linear-gradient(   to top left,
+            rgba($color-primary-dark,1),
+            rgba($color-primary-light,.9) ),
+            url();
+    background-size: cover;                   
+}
+
+

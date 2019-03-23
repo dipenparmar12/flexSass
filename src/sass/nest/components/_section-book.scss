@@ -1,0 +1,84 @@
+.book{
+    width: 100%;
+    height: 45rem;
+    background-color: transparent;
+    background-image: url(../../img/bhk6.jpg);
+    background-size: cover;
+    box-shadow: 0 0.3rem 2rem rgba($color-black,0.4 );  
+    border-radius: 3px;
+    //padding: 3rem;
+    font-size: 1.4rem;
+    transition: all .3s;
+    
+    &__form{
+        width: 100%;
+        height: 100%;   
+        background-image: 
+            linear-gradient(105deg,
+            rgba($color-white,.8) 0%, 
+            rgba($color-white,.8) 50%,
+            transparent 50% );
+            
+    }
+
+}
+
+.form{
+    padding: 4rem;
+    
+    &__group{
+        &:not(:last-child){
+            margin-bottom: 1.5rem;    
+            
+        }     
+    }
+
+    &__input{
+        width: 40%;
+        padding: 1.2rem 1.1rem;
+        color: blue;
+        background-color: rgba($color-white,0.9);
+       // box-shadow: 0 0.5rem 1rem rgba($color-black,0.2);  
+        border: none;
+        border-radius: 3px;
+        border-bottom: .4rem solid transparent;
+        display: block;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:focus{
+            border: none;
+            outline: none;
+            box-shadow: 0 0.5rem 3rem rgba($color-black,0.2);  
+            border-bottom: .4rem solid $color-primary;
+            background-color: rgba($color-white,0.95 );
+            transition: all .2s;
+
+            &:invalid{
+                border-bottom: .4rem solid $color-red;
+            }
+
+            &::-webkit-input-placeholder,::-ms-input-placeholder{
+                font-size: 110%;          
+            }
+        }
+
+
+    }
+
+    &__lable{
+        font-size:1.2rem;
+        font-weight: 600;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        display: block;
+        transition: all .2s;
+       
+    }   
+
+    &__input:placeholder-shown + &__lable {
+        opacity: 0;
+        transform: translatey(-4rem);
+    }
+
+}

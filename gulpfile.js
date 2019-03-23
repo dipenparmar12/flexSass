@@ -71,7 +71,7 @@ exports.style = style;
 function script() {
   return gulp.src(paths.scripts.src)
 	.pipe(uglify())
-	.pipe(concat('main.min.js'))
+	// .pipe(concat('main.min.js'))
 	.pipe(gulp.dest(paths.scripts.dest))
 	.pipe(browserSync.stream())
 }

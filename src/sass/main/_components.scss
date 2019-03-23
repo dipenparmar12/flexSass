@@ -1,7 +1,7 @@
 ////////////////////////////
 /// LOGO
 .logo{
-    height: 6.5rem;
+    height: 6rem;
     margin-left: 2.4rem;
 }
 
@@ -62,27 +62,70 @@
 ////////////////////////////
 /// USER NAVIGATION
 .userNav {
-    background-color: rgb(164, 236, 81);
-    &__icon-box{
+    // background-color: rgb(236, 207, 81);
+    align-self: stretch;
+    display: flex;
+    align-items: center;
     
+    &__icon-box{
+
+        // for Notification ICON
+        position: relative;
+
+        &:hover{
+            background-color: var(--color-grey-light-3);
+        }
     }
+
+    & > * {
+        // nested Flex ( each Every childs of UserNav Class), align center Horizontali
+        display: flex;
+
+        // align Horizontli center all items (userName iconBox)
+        align-items: center;
+
+        // height 100% as parent (Same as HeaderNavi)
+        align-self: stretch;
+
+        padding: .7rem 1rem;
+        cursor: pointer;
+    }
+
     
     &__icon{
-        height: 2rem;
-        width: 2rem;
+        
+        display: flex;
+
+        height: 2.4rem;
+        width: 2.4rem;
     }
 
     &__notification{
+        background-color: var(--color-primary);
+        border-radius:40px;
+        font-size: 1rem;
 
+        // Creating OVAL For no.of Nofi
+        padding: 2px;
+        text-align: center;
+        height: 2rem;
+        width: 2rem;
+        
+        // toAlign no.of.Noti at top of the UserNavICON
+        position: absolute;
+        top:1rem;
+        left:2.2rem;
+        
     }
 
     &__userDP{
-        height: 6rem;
-        width: 6rem;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 100px;
     }
 
     &__userName{
-
+        font-size: 1.2rem;
     }
 
 }

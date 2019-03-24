@@ -4,10 +4,9 @@
     width: 90rem;
     width: 120rem;
     margin: 4rem auto;
-    min-height: 80rem;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.394);
 
-    min-height: 80rem;
+    // min-height: 80rem;
 }
 
 .container{   
@@ -23,9 +22,9 @@ display: flex;
 }
 
 .sidebar{
-  // background-color: #ececec;
-  height: 700px;
-  // Chagned_DPN
+//   background-color: #ececec;
+//   height: 700px;
+//   Chagned_DPN
   flex: 0 0 19rem;
   display: flex;
 }

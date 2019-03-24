@@ -238,7 +238,7 @@
     align-items: center;
 
     // background-color: var(--color-grey-light-1  );
-    border-bottom: 1px solid var(--color-grey-light-3);
+    border-bottom: var(--border);
 
     &__heading{
         padding: 1rem 3rem;
@@ -280,28 +280,55 @@
 ////////////////////////////
 /// ARTICAL & TESTIMONIALS
 
-.main_article{
+.main_article {
     display: flex;
     justify-content: space-between;
-
     padding: 3rem;
+    color:var(--color-grey-dark-1);
 
-    &__artical{
-        box-shadow: 0 2rem 5rem rgba(#000,0.3);
+    &__content > * {
+        margin-bottom: 1.3rem;
+        border-bottom: var(--border);
+    }
+
+
+    &__content{
+        box-shadow: 0 2rem 6rem rgba(#000,0.3);
         margin-right: 3rem;
         flex: 0 0 70%;
-        // background-color: rgb(162, 92, 228);
+        padding: 2rem 3rem;
     }
 
-    &__paragraphs{    
-        padding: 3rem;
+    &__paragraphs {
+        padding-bottom: 2rem;
     }
 
+    &__userReview{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
+        &__thought{
+            color:var(--color-grey-dark-3);
+        }
+
+        &__people{
+            margin-right: 2.4rem;
+        }
+
+        &__img{
+            height: 4rem;
+            width: 4rem;
+            margin-right: -1.4rem;
+
+            border-radius: 50px;
+        }
+    }
 
     &__testimonial{
         flex: 1;
         padding: 3rem;
         background-color: rgb(57, 212, 187);
     }
+
 }

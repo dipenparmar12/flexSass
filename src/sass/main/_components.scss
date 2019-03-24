@@ -129,3 +129,86 @@
     }
 
 }
+
+
+
+
+////////////////////////////
+/// Sidebar Navigation
+.sidebar{
+
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        background-color: var(--color-grey-dark-1);
+        
+        &List{
+            color: white;
+        }
+
+        &_link,
+        &_link:link,
+        &_link:visited{
+            display: flex;
+            align-items: center;
+            
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            // padding: .2rem 2rem;
+
+            border-bottom: 1px solid gray;
+
+            // HoverEffect (Side SolidLine)
+            position: relative;
+            
+            & span{
+                padding: 10px;
+                z-index: 10;
+            }
+            
+            &:hover{
+
+            }
+
+        }
+    
+        &_link::before{
+            transition: all .14s ease-in-out;
+                        // height .31s ease-in-out;
+            content: "";
+            left: 0;
+            top: 0;
+            position: absolute;
+            background-color: var(--color-primary-light);
+            width: .9rem;
+            // height: 0%;
+            height: 100%;
+            transform: scaleX(.3);
+            
+        }
+    
+        &_link:hover::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            transform: scaleX(1);
+            background-color: var(--color-primary);
+        }
+
+        &Item{
+            // background-color: rgb(219, 97, 60);   
+        }
+    
+        &Icon{
+            z-index: 10;
+            height: 2.2rem;
+            width: 2.2rem;
+            margin-left: 2rem;
+            fill: currentColor;
+        }
+
+    } //sidebar__nav
+
+} //.sideBar

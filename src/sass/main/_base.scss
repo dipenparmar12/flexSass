@@ -77,3 +77,13 @@ body{
     min-height: 90vh;
     
 }
+
+
+// Remove Text UnderLine Clean Default Styles 
+a{
+    text-decoration: none;
+    color:inherit;
+}
+ul li{
+    list-style-type: none;
+}

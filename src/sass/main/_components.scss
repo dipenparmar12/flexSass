@@ -287,12 +287,13 @@
     color:var(--color-grey-dark-1);
 
     &__content > * {
-        margin-bottom: 1.3rem;
-        border-bottom: var(--border);
+        margin-bottom: 2rem;
+        
     }
 
 
     &__content{
+        
         box-shadow: 0 2rem 6rem rgba(#000,0.3);
         margin-right: 3rem;
         flex: 0 0 70%;
@@ -300,35 +301,80 @@
     }
 
     &__paragraphs {
+        border-bottom: var(--border);
         padding-bottom: 2rem;
     }
 
-    &__userReview{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        &__thought{
-            color:var(--color-grey-dark-3);
-        }
-
-        &__people{
-            margin-right: 2.4rem;
-        }
-
-        &__img{
-            height: 4rem;
-            width: 4rem;
-            margin-right: -1.4rem;
-
-            border-radius: 50px;
-        }
-    }
 
     &__testimonial{
         flex: 1;
         padding: 3rem;
         background-color: rgb(57, 212, 187);
+    }
+
+
+}
+
+
+////////////////////////////
+/// HomePageArtical Feature List
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+
+    &__item{
+        flex: 0 0 48%;
+        padding: .3rem 1rem;
+        margin: 1%;
+        // background: rgba(209, 145, 206, 0.781);
+    }
+
+    // List Icons
+    &__item::before{
+        content:"";
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-right: .9rem;
+
+        // TEMPDPN
+        transform: rotate(190deg);
+
+        // background-image: url(../../img/compass.svg);
+        // background-size: cover;
+
+        background-color:var(--color-primary); 
+        mask-image: url(../../img/compass.svg);
+     
+    }
+
+}
+
+
+
+////////////////////////////
+/// UserReview
+
+.userReview{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--border);
+
+    &__thought{
+        color:var(--color-grey-dark-3);
+    }
+
+    &__people{
+        margin-right: 2.4rem;
+    }
+
+    &__img{
+        height: 4rem;
+        width: 4rem;
+        margin-right: -1.4rem;
+        border-radius: 50px;
     }
 
 }

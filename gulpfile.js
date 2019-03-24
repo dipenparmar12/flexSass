@@ -4,9 +4,10 @@
 //  npm install --save-dev browser-sync
 // 	npm install --save-dev gulp-htmlmin
 // 	npm i --save-dev gulp-imagemin
+//  npm i --save-dev gulp-dest-clean
 //  ---OR---
 // 	All on one File
-// 	npm i --save-dev gulp gulp-sass gulp-postcss autoprefixer cssnano gulp-sourcemaps browser-sync gulp-htmlmin gulp-imagemin
+// 	npm i --save-dev gulp gulp-sass gulp-postcss autoprefixer cssnano gulp-sourcemaps browser-sync gulp-htmlmin gulp-imagemin gulp-dest-clean
 
 // gulpfile.js
 var gulp = require("gulp"),
@@ -19,8 +20,11 @@ var gulp = require("gulp"),
 	rename = require('gulp-rename'),
     //for_JavaScript
 	concat = require('gulp-concat'),
-    uglify = require('gulp-uglify');
-    imagemin = require('gulp-imagemin');
+    uglify = require('gulp-uglify'),
+    imagemin = require('gulp-imagemin'),
+    clean = require('gulp-dest-clean')
+    ;
+
 
 var browserSync = require("browser-sync").create();
 
@@ -35,7 +39,8 @@ var paths = {
 
 // Html minify
 function html(){
-	return gulp.src(paths.html.src)
+    return gulp.src(paths.html.src)
+        
 		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest(paths.html.dest));
 }
@@ -70,6 +75,7 @@ exports.style = style;
 
 function script() {
   return gulp.src(paths.scripts.src)
+    
 	.pipe(uglify())
 	// .pipe(concat('main.min.js'))
 	.pipe(gulp.dest(paths.scripts.dest))
@@ -83,6 +89,7 @@ exports.js = js;
 // images minify
 function img(){
     return gulp.src(paths.img.src)
+        .pipe(clean(paths.img.dest),paths.img.src)
         .pipe(imagemin([
             // imagemin.jpegtran({progressive: true}),
             // imagemin.optipng({optimizationLevel: 5})
@@ -109,6 +116,8 @@ function watch() {
         // You can use the proxy setting to proxy that instead
         // proxy: "yourlocal.dev"
     });
+
+    
 
     // gulp.watch takes in the location of the files to watch for changes
     // and the name of the function we want to run on change

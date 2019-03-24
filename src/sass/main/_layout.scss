@@ -3,7 +3,7 @@
 .main-contenter{
     width: 90rem;
     width: 120rem;
-    margin: 5rem auto;
+    margin: 4rem auto;
     min-height: 80rem;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.394);
 
@@ -16,28 +16,25 @@ display: flex;
 
 .header{
     background-color: #fff;
-    display: flex;  
+    display: flex;
 
     justify-content: space-between;
     align-items: center;
 }
 
 .sidebar{
-  background-color: #ececec;
+  // background-color: #ececec;
   height: 700px;
   // Chagned_DPN
-//   flex: 0 0 21rem;
+  flex: 0 0 19rem;
   display: flex;
 }
 
 .content{
-    background-color: rgba(0, 204, 255, 0.897);
+    background-color:#ffff;
     flex:1;
 }
 .search_icon{
     height: 2rem;
 }
 
-
-//////////////////////////////////
-//// Container LEFT SIDEBAR

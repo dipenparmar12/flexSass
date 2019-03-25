@@ -363,6 +363,7 @@
     border-bottom: var(--border);
 
     &__thought{
+        margin-right: auto;
         color:var(--color-grey-dark-3);
     }
 
@@ -371,10 +372,12 @@
     }
 
     &__img{
+        // box-sizing: content-box;
         height: 4rem;
         width: 4rem;
         margin-right: -1.4rem;
-        border-radius: 50px;
+        border-radius: 50%;
+        border: 3px solid white;
     }
 
 }

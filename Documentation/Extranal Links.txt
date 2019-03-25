@@ -14,6 +14,17 @@ https://gist.github.com/jeromecoupe/0b807b0c1050647eb340360902c3203a
 // SVG ICONS
 https://icomoon.io/
 
+// HTML TO Sass Format Converter
+http://htmltocss.github.io/
+https://johnhhorton.github.io/sassifyhtml/
+
 
 // onLine any to any converter 
+http://beautifytools.com
 http://beautifytools.com/csv-to-sql-converter.php
+
+
+
+
+
+

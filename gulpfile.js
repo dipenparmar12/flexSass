@@ -144,7 +144,6 @@ function watch() {
         // proxy: "yourlocal.dev"
     });
 
-
     // gulp.watch takes in the location of the files to watch for changes
     // and the name of the function we want to run on change
     gulp.watch(src+"**/*",gulp.series(style,pugToHtml,html,script,img));

@@ -5,9 +5,14 @@
 // 	npm install --save-dev gulp-htmlmin
 // 	npm i --save-dev gulp-imagemin
 //  npm i --save-dev gulp-dest-clean
+
+//  npm i --save gulp-pug
+
 //  ---OR---
 // 	All on one File
-// 	npm i --save-dev gulp gulp-sass gulp-postcss autoprefixer cssnano gulp-sourcemaps browser-sync gulp-htmlmin gulp-imagemin gulp-dest-clean
+
+// 	npm i --save-dev gulp gulp-sass gulp-postcss autoprefixer cssnano gulp-sourcemaps browser-sync gulp-htmlmin gulp-imagemin gulp-dest-clean 
+//  npm i --save gulp-pug
 
 // gulpfile.js
 var gulp = require("gulp"),
@@ -22,7 +27,8 @@ var gulp = require("gulp"),
 	concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
-    clean = require('gulp-dest-clean')
+    clean = require('gulp-dest-clean'),
+    pug = require('gulp-pug')
     ;
 
 
@@ -31,11 +37,32 @@ var browserSync = require("browser-sync").create();
 var src="src/", dest="dest/";
 
 var paths = {
-	html:{src: src+"**/*.html", dest:dest },
+    pug:{src:src+'**/*.pug',dest:dest},
+	html:{src: src+"**/*.html", dest:dest},
 	styles:{ src: src+"sass/**/*.scss", dest:dest+"assets/style/" },
 	scripts:{ src: src+"script/**/*.js", dest:dest+"assets/script/" },
 	img:{ src: src+"img/**/*", dest:dest+"assets/img/" }
 };
+
+
+// Pug/Jade to HTML 
+// gulp.task('pug', function buildHTML() {
+//   return gulp.src(paths.pug.src)
+//   .pipe(pug({
+//      pretty: true
+//   }))
+//   .pipe(gulp.dest(paths.pug.dest))
+// });
+
+function pugToHtml(){
+   return gulp.src(paths.pug.src)
+  .pipe(pug({
+     pretty: true
+  }))
+  .pipe(gulp.dest(paths.pug.dest));
+}
+exports.pugToHtml = pugToHtml;
+
 
 // Html minify
 function html(){
@@ -117,11 +144,10 @@ function watch() {
         // proxy: "yourlocal.dev"
     });
 
-    
 
     // gulp.watch takes in the location of the files to watch for changes
     // and the name of the function we want to run on change
-    gulp.watch(src+"**/*",gulp.series(style,html,script,img));
+    gulp.watch(src+"**/*",gulp.series(style,pugToHtml,html,script,img));
 
     // We should tell gulp which files to watch to trigger the reload
     // This can be html or whatever you're using to develop your website
@@ -134,5 +160,4 @@ exports.watch = watch;
 
 // Default Task for gulp commnad 
 // just wirte "gulp" word in CLI for staring service
-
 gulp.task('default',watch);

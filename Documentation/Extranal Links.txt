@@ -1,4 +1,4 @@
-// Learn FlexBox by Game
+
 https://flexboxfroggy.com/
 
 
@@ -28,3 +28,12 @@ http://beautifytools.com/csv-to-sql-converter.php
 
 
 
+
+
+//// Template
+https://colorlib.com/preview/theme/photogallery/gallery.html
+http://www.11-76.com/themes/fin/index-SINGLE-IMAGE-CLOUDS-DARK.html
+
+
+//// FlexBox Refference
+https://flexbox.webflow.com/#verticalcenter

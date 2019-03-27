@@ -84,15 +84,16 @@
             position: absolute;
             top: 0;
             right: -1.4rem;
-            background-color: green;
+            background-color: rgb(175, 175, 175);
         }
 
 
         &:hover {
-            transform: scale(1.1);
+            // transform: scale(1.1);
             background-color: #fff;
-            box-shadow: 0 .5rem 2.2rem .5rem rgba(228, 228, 228, 0.589);
+            box-shadow: 0 .5rem 2rem 2rem rgba(228, 228, 228, 0.589);
         }
+
     }
 
     &__heading_2{
@@ -104,6 +105,3 @@
     }
 
 }
-
-
-

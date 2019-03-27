@@ -54,23 +54,53 @@
 ///////////////////////////////
 /// Section WebFlow
 .webflow_2{
-    height: 40rem;
-    padding: 10rem 4rem;
-    background-color: rgb(241, 238, 238);
+    // height: 40rem;
+    padding: 8rem 3rem;
+    background-color: rgb(236, 243, 247);
     
     display: flex;
     justify-content: center;
-
+    flex-flow: row wrap;
+    
     &__card_2{
-        border-radius: 10ox;
-        padding: 2rem 2rem;
+        flex-basis: 40%;
+        margin-left: 2.5rem;
+        border-radius: 30ox;
+        padding: 4rem 4rem;
         transition: all .2s;
 
+        position: relative;
 
-        &:hover{
-            background-color: #fff;
-            box-shadow: 0 .5rem 1.9rem .5rem rgba(228, 228, 228, 0.589);
+        &_icon{
+            height: 5rem;
         }
+        
+        // background-color: grey;
+
+        &:not(:last-child)::after{
+            content: "";
+            width: .2rem;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -1.4rem;
+            background-color: green;
+        }
+
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: #fff;
+            box-shadow: 0 .5rem 2.2rem .5rem rgba(228, 228, 228, 0.589);
+        }
+    }
+
+    &__heading_2{
+        font-size: 2.2rem;
+    }
+
+    &__paragraph{
+        color: rgb(180, 180, 180)
     }
 
 }

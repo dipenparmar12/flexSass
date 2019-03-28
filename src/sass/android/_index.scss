@@ -1,0 +1,19 @@
+///////////////////////////////
+/// IndexPage
+
+div.indexpage{
+    width: 100%;
+    height: 100vh;
+}
+
+.indexpage {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    background-color: rgb(67, 235, 184);
+
+    &__content{
+
+    }
+
+}

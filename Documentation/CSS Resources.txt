@@ -1,0 +1,12 @@
+//// Template
+https://colorlib.com/preview/theme/photogallery/gallery.html
+http://www.11-76.com/themes/fin/index-SINGLE-IMAGE-CLOUDS-DARK.html
+
+
+//// FlexBox Refference
+https://flexbox.webflow.com/#verticalcenter
+
+
+/// CSS nice Refference
+https://learn.shayhowe.com/advanced-html-css/transitions-animations/
+http://animista.net/play/basic/flip-scale/flip-scale-down-ver

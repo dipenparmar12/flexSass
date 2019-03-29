@@ -10,3 +10,7 @@ https://flexbox.webflow.com/#verticalcenter
 /// CSS nice Refference
 https://learn.shayhowe.com/advanced-html-css/transitions-animations/
 http://animista.net/play/basic/flip-scale/flip-scale-down-ver
+
+
+///// Generate Css properties 
+https://www.cssportal.com/

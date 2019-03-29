@@ -8,10 +8,15 @@ html(lang="en")
         link(rel="stylesheet", href="../assets/style/android/style.min.css")
     body
         div.indexpage
-            .indexpage__content 
-                h2.indexpage__main_heading Main Heading indexPage
-                p.indexpage__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, esse Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, corrupti.
-            .indexpage__grid_layout
-                - for ( i=1; i <=10 ; i++ )
-                    div( id="div" + i ) GirdBox(i)
-                
+            .indexpage__left
+                .indexpage__grid_layout
+                    - for (i=1; i<=12; i++)
+                        .indexpage__grid_box_container
+                            .indexpage__grid_box Two
+                            .indexpage__grid_box1 One
+                        
+                            
+            .indexpage__right
+                h1 Format IS Everything
+                p To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advance in science. 
+z

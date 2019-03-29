@@ -1,65 +1,63 @@
-doctype html
-html(lang='en')
-	head
-		meta(charset='UTF-8')
-		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		meta(http-equiv='X-UA-Compatible', content='ie=edge')
-		link(href='../assets/style/android/style.min.css', rel='stylesheet')
-		title Light Dashboard
-	body
-		nav.topnav
-			.topnav__Heading_logo
-			.topnav__search
-			.topnav__user_profile
-				.topnav__user_img
-				.topnav__user_name
-		nav.sidenav
-			.sidenav__nav
-				.sidenav__heading
-					.sidenav__list_container
-						.sidenav__list_item
-							.sidenav__list_icon
-							.sidenav__list_link
-				.sidenav__heading
-					.sidenav__list_container
-						.sidenav__list_item
-							.sidenav__list_icon
-							.sidenav__list_link
-			.sidenav_bottom_btn
-		section
-			.header
-				.header_body
-					.header_card
-						.header_card_title
-					.header_card
-						.header_card_title
-					.header_card
-						.header_card_title
-					.header_card
-						.header_card_title
-			.page_content
-				.page_content__heading
-				.product
-					.product_card
-						.product_card_title
-					.product_rating
-					.product_title
-					.product_name
-					.prodcut_btn
-			.sidebar
-				.card
-					.mediaplayer__head
-						.icon.title.name
-							.option_btn
-					.mediaplayer__options
-						.mediaplayer__btn_start_time
-						.mediaplayer__btn_previous
-						.mediaplayer__btn_pause
-						.mediaplayer__btn_next
-						.mediaplayer__btn_end_time
-				.card
-					.mediaplayer__list
-						.mediaplayer__listitem
-							.mediaplayer__listitem_icon
-							.mediaplayer__listitem_name
-							.mediaplayer__listitem_length
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="../assets/style/android/style.min.css")
+        title Light Dashboard
+    body
+        .light_dashboard_container
+            .light_dashboard_wraper
+                nav.topnav TopNav
+                    .topnav__Heading_logo
+                    .topnav__search
+                    .topnav__user_profile
+                        .topnav__user_img
+                        .topnav__user_name
+
+                nav.sidenav sidenav
+                    .sidenav__nav
+                        .sidenav__heading
+                            .sidenav__list_container
+                                .sidenav__list_item
+                                    .sidenav__list_icon
+                                    .sidenav__list_link
+                        .sidenav__heading
+                            .sidenav__list_container
+                                .sidenav__list_item
+                                    .sidenav__list_icon
+                                    .sidenav__list_link
+                    .sidenav_bottom_btn
+
+                .page_content
+
+                    .secondary_heading  GridView__Card_Horizontal_list 
+
+                    .product_details 
+                        .card  Heading
+                            .product_card
+                            .product_card_title
+                            .product_rating
+                            .product_title
+                            .product_name
+                            .prodcut_btn
+
+                    .sidebar.card MediaPlayerCard
+                        .card
+                            .mediaplayer__head
+                                .icon.title.name    
+                                    .option_btn
+                            .mediaplayer__options
+                                .mediaplayer__btn_start_time
+                                .mediaplayer__btn_previous
+                                .mediaplayer__btn_pause
+                                .mediaplayer__btn_next
+                                .mediaplayer__btn_end_time
+                        .card
+                            .mediaplayer__list
+                                .mediaplayer__listitem
+                                    .mediaplayer__listitem_icon
+                                    .mediaplayer__listitem_name
+                                    .mediaplayer__listitem_length
+                    

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="../assets/style/android/style.min.css")
+        title Light Dashboard
+    body.light_dashboard_container
+        nav.topnav TopNav
+            .topnav__Heading_logo
+            .topnav__search
+            .topnav__user_profile
+                .topnav__user_img
+                .topnav__user_name
+
+        nav.sidenav sidenav
+            .sidenav__nav
+                .sidenav__heading
+                    .sidenav__list_container
+                        .sidenav__list_item
+                            .sidenav__list_icon
+                            .sidenav__list_link
+                .sidenav__heading
+                    .sidenav__list_container
+                        .sidenav__list_item
+                            .sidenav__list_icon
+                            .sidenav__list_link
+            .sidenav_bottom_btn
+
+        section 
+            .head head 
+                .head__body
+                    .head__card
+                        .head__card_title
+                    .head__card
+                        .head__card_title
+                    .head__card
+                        .head__card_title
+                    .head__card
+                        .head__card_title
+                    
+            .page_content PageContent
+                .page_content__heading
+                .product
+                    .product_card
+                        .product_card_title
+                    .product_rating
+                    .product_title
+                    .product_name
+                    .prodcut_btn
+
+            .sidebar SideBar
+                .card
+                    .mediaplayer__head
+                        .icon.title.name    
+                            .option_btn
+                    .mediaplayer__options
+                        .mediaplayer__btn_start_time
+                        .mediaplayer__btn_previous
+                        .mediaplayer__btn_pause
+                        .mediaplayer__btn_next
+                        .mediaplayer__btn_end_time
+                .card
+                    .mediaplayer__list
+                        .mediaplayer__listitem
+                            .mediaplayer__listitem_icon
+                            .mediaplayer__listitem_name
+                            .mediaplayer__listitem_length
+
+
+
+
+
+///////////////////////////////
+/// Light DashBoard
+
+body.light_dashboard_container{
+    background-color: rgba(248, 240, 240, 0.568);
+    
+    .topnav{
+        background-color: rgba(247, 163, 54, 0.623);
+    }
+    .sidenav{
+        background-color: rgba(180, 247, 54, 0.623);
+    }
+    .head{
+        background-color: rgba(54, 247, 141, 0.623);
+    }
+    .page_content{
+        background-color: rgba(54, 170, 247, 0.623);
+    }
+    .sidebar{
+        background-color: rgba(192, 54, 247, 0.623);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="../assets/style/android/style.min.css")
+        title Light Dashboard
+    body
+        .light_dashboard_container
+            .light_dashboard_wraper
+                nav.topnav TopNav
+                    .topnav__Heading_logo
+                    .topnav__search
+                    .topnav__user_profile
+                        .topnav__user_img
+                        .topnav__user_name
+
+                nav.sidenav sidenav
+                    .sidenav__nav
+                        .sidenav__heading
+                            .sidenav__list_container
+                                .sidenav__list_item
+                                    .sidenav__list_icon
+                                    .sidenav__list_link
+                        .sidenav__heading
+                            .sidenav__list_container
+                                .sidenav__list_item
+                                    .sidenav__list_icon
+                                    .sidenav__list_link
+                    .sidenav_bottom_btn
+     
+                .page_content PageContent
+                    .page_content__heading
+                    .product
+                        .product_card
+                            .product_card_title
+                        .product_rating
+                        .product_title
+                        .product_name
+                        .prodcut_btn
+                
+                .head head 
+                    .head__body
+                        .head__card
+                            .head__card_title
+                        .head__card
+                            .head__card_title
+                        .head__card
+                            .head__card_title
+                        .head__card
+                            .head__card_title
+                   
+                .sidebar SideBar
+                    .card
+                        .mediaplayer__head
+                            .icon.title.name    
+                                .option_btn
+                        .mediaplayer__options
+                            .mediaplayer__btn_start_time
+                            .mediaplayer__btn_previous
+                            .mediaplayer__btn_pause
+                            .mediaplayer__btn_next
+                            .mediaplayer__btn_end_time
+                    .card
+                        .mediaplayer__list
+                            .mediaplayer__listitem
+                                .mediaplayer__listitem_icon
+                                .mediaplayer__listitem_name
+                                .mediaplayer__listitem_length
+
+
+
+
+
+///////////////////////////////
+/// Light DashBoard
+
+.light_dashboard_container{
+    padding: 8rem 13rem;
+}
+
+.light_dashboard_wraper{
+    background-color: rgba(248, 240, 240, 0.568);
+    display: flex;
+    flex-flow: row wrap;
+
+    .topnav{
+        flex: 1 0 100%;
+        background-color: rgba(197, 197, 197, 0.623);
+    }
+    .sidenav{
+        flex: 0 0 20%;
+        background-color: rgba(151, 151, 151, 0.623);
+    }
+    .head{
+        flex: 1 0 auto;
+        background-color: rgba(113, 133, 122, 0.623);
+    }
+    .page_content{
+        flex: 1 0 80%;
+        background-color: rgba(183, 209, 226, 0.623);
+    }
+    .sidebar{
+        flex: 1 0 25%;
+        background-color: rgba(99, 99, 99, 0.623);
+    }
+
+}

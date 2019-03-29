@@ -6,7 +6,7 @@ html(lang='en')
 		meta(http-equiv='X-UA-Compatible', content='ie=edge')
 		link(href='../assets/style/android/style.min.css', rel='stylesheet')
 		title Light Dashboard
-	body
+	body.light_dashboard_container
 		nav.topnav
 			.topnav__Heading_logo
 			.topnav__search

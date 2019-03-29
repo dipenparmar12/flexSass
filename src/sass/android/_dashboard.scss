@@ -1,2 +1,72 @@
 ///////////////////////////////
 /// Light DashBoard
+
+
+// /* Extra small devices (phones, 600px and down) */
+// @media only screen and (max-width: 600px) {} 
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {} 
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {} 
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {} 
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {}
+
+
+.light_dashboard_container{
+    padding: 8rem 13rem;
+}
+
+@media only screen and (max-width:425px){
+    .light_dashboard_container{
+        padding: 0;
+    }
+}
+
+.light_dashboard_wraper{
+    background-color: rgba(248, 240, 240, 0.568);
+    display: flex;
+    flex-flow: row wrap;
+
+    .topnav{
+        flex: 1 0 100%;
+        background-color: rgba(197, 197, 197, 0.623);
+    }
+
+    .sidenav{
+        flex: 0 0 20%;
+        padding: 2rem;
+        background-color: rgba(245, 204, 204, 0.623);
+    }
+    
+    .page_content{
+        background-color: rgba(154, 155, 236, 0.623);
+        flex: 1 0 70%;
+        display: flex;
+        flex-flow: row wrap;
+
+        // height: 40rem;
+    }
+
+    .secondary_heading{
+       flex: 1 0 100%; 
+       background-color: rgba(110, 248, 179, 0.623);
+    }
+
+    .product_details{
+        flex: 1 0 70%;
+        background-color: rgba(141, 243, 109, 0.623);
+    }
+
+    .sidebar{
+        flex: 1 0 30%;
+    }
+
+    //
+
+}

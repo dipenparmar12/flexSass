@@ -81,14 +81,13 @@
         flex-direction: column;
         align-items: center;
         // transform: skewX(20deg);
+        
     }
 
     &__list_items > *{
         transform: skewX(20deg);
         color: white;
-        
     }
-
 
     &__list_items li{
         text-align: center;
@@ -97,22 +96,21 @@
         &:not(:last-child){    
             border-bottom: 1px solid rgba(240, 240, 240, 0.357);
         }
-
-        transition: all .1s;
-
-        &:hover a{
-            color:black;
-            letter-spacing:1.6rem;
-            font-size: 2rem;
-        }
-
     }
 
     &__list_items li a{
         font-weight: 300;
         text-transform: uppercase;
-        letter-spacing: .81rem;
+        letter-spacing: .51rem;
         font-size: 1.8rem;
+        transition: all .3s;
+
+        &:hover{
+            color:black;
+            letter-spacing:1.3rem;
+            // font-size: 2rem;
+            font-weight: 600;
+        }
     }
 
 

@@ -44,7 +44,10 @@
                 transition: all .2s ease-out;
                 font-size: 2rem;
                 color: rgb(158, 158, 158);
-                &:hover{
+                
+                border: 1px solid rgba(197, 197, 197, 0.37);
+
+                &:hover,&:focus{
                     width: 55%;
                     // width: auto;
                     background-color: rgba(240, 239, 239, 0.685);

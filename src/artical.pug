@@ -1,0 +1,151 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Project Theme
+    link(href='assets/style/artical/style.min.css', rel='stylesheet')
+  body
+    .main-contenter
+      header.header
+        img.logo(alt='MainLogo', src='assets/img/logo4.png', srcset='')
+        form.search(action='#')
+          input.search__input(type='text', placeholder='Search Item')
+          buton.search__btn
+            svg.search__icon
+              use(xlink:href='assets/img/svg_icons.svg#icon-search')
+        .userNav
+          .userNav__icon-box
+            svg.userNav__icon
+              use(xlink:href='assets/img/svg_icons.svg#icon-bookmarks')
+            span.userNav__notification 9
+          .userNav__icon-box
+            svg.userNav__icon
+              use(xlink:href='assets/img/svg_icons.svg#icon-github')
+            span.userNav__notification 16
+          .userNav__user
+            img.userNav__userDP(alt='', src='assets/img/dipen.jpg')
+            span.userNav__userName Dipends
+      .container
+        nav.sidebar
+          .sidebar__nav
+            ul.sidebar__navList
+              li.sidebar__navItem
+                a.sidebar__nav_link(href='')
+                  svg.sidebar__navIcon
+                    use(xlink:href='assets/img/svg_icons.svg#icon-github')
+                  span My Fev
+              li.sidebar__navItem
+                a.sidebar__nav_link(href='')
+                  svg.sidebar__navIcon
+                    use(xlink:href='assets/img/svg_icons.svg#icon-tux')
+                  span Linux 
+              li.sidebar__navItem
+                a.sidebar__nav_link(href='')
+                  svg.sidebar__navIcon
+                    use(xlink:href='assets/img/svg_icons.svg#icon-stats-bars')
+                  span DashBoard
+              li.sidebar__navItem
+                a.sidebar__nav_link(href='')
+                  svg.sidebar__navIcon
+                    use(xlink:href='assets/img/svg_icons.svg#icon-twitter')
+                  span Twitter
+              li.sidebar__navItem
+                a.sidebar__nav_link(href='')
+                  svg.sidebar__navIcon
+                    use(xlink:href='assets/img/svg_icons.svg#icon-instagram')
+                  span InstaGram
+              li.sidebar__navItem
+                a.sidebar__nav_link(href='')
+                  svg.sidebar__navIcon
+                    use(xlink:href='assets/img/svg_icons.svg#icon-stats-dots')
+                  span Log
+              li.sidebar__navItem
+                a.sidebar__nav_link(href='')
+                  svg.sidebar__navIcon
+                    use(xlink:href='assets/img/svg_icons.svg#icon-pie-chart')
+                  span Pia Chart
+              li.sidebar__navItem
+                a.sidebar__nav_link(href='')
+                  svg.sidebar__navIcon
+                    use(xlink:href='assets/img/svg_icons.svg#icon-chrome')
+                  span Chroome
+              li.sidebar__navItem
+                a.sidebar__nav_link(href='')
+                  svg.sidebar__navIcon
+                    use(xlink:href='assets/img/svg_icons.svg#icon-switch')
+                  span Shutdown
+            .copyRights
+              | © 2019,All Rights Recieved
+        .content
+          .gallary
+            figure.gallary__figure_img
+              img.gallary__photo(alt='Gallary photo', src='assets/img/img8.jpg', srcset='')
+            figure.gallary__figure_img
+              img.gallary__photo(alt='Gallary photo', src='assets/img/img2.jpg', srcset='')
+            figure.gallary__figure_img
+              img.gallary__photo(alt='Gallary photo', src='assets/img/img3.jpg', srcset='')
+          .headline
+            h2.headline__heading  This is What we Do!
+            .headline__stars
+              svg.headline__star
+                use(xlink:href='assets/img/svg_icons.svg#icon-eye')
+              svg.headline__star
+                use(xlink:href='assets/img/svg_icons.svg#icon-eye')
+              svg.headline__star
+                use(xlink:href='assets/img/svg_icons.svg#icon-eye')
+              svg.headline__star
+                use(xlink:href='assets/img/svg_icons.svg#icon-eye')
+              svg.headline__star
+                use(xlink:href='assets/img/svg_icons.svg#icon-eye')
+            .headline__link
+              a(href='')  MoreInfo 
+          article.main_article
+            .main_article__content
+              .main_article__paragraphs
+                p.main_article__paragraph
+                  | Lorem ipsum dolor sit amet 
+                  b This is what i love 
+                  |  consectetur adipisicing elit. Dolor non distinctio natus perspiciatis, eius esse accusantium debitis omnis amet, at sed quae odio? Cupiditate provident unde reprehenderit.
+                p.main_article__paragraph
+                  b Dipends
+                  |  THemes Lorem ipsum donderit.
+              .main_article__paragraphs
+                p.main_article__paragraph
+                  | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor non distinctio natus perspiciatis, eius esse accusantium debitis omnis amet, at sed blanditiis laborum minima quae odio? Cupiditate provident unde reprehenderit.
+              h3 Project Features
+              ul.list
+                li.list__item  Hello World.
+                li.list__item  Hello World program
+                li.list__item You’re very beautiful
+                li.list__item You look as pretty as always
+                li.list__item You’re so adorable
+                li.list__item You look drop dead gorgeous
+                li.list__item You have the most beautiful eyes
+                li.list__item I think you’re very attractive
+                li.list__item Wow, you’re gorgeous
+                li.list__item I think you’re stunning!
+                li.list__item I think you’re super cute
+                li.list__item Lorem ipsum dolor sit.
+                li.list__item Lorem ipsum dolor sit.
+                li.list__item Lorem ipsum dolor sit.
+              .userReview
+                p.userReview__thought
+                  | This is  
+                  b made
+                  |  by full of 
+                  b Love
+                .userReview__people
+                  img.userReview__img(alt='', src='assets/img/dipen.jpg')
+                  img.userReview__img(alt='', src='assets/img/dipen.jpg')
+                  img.userReview__img(alt='', src='assets/img/dipen.jpg')
+                  img.userReview__img(alt='', src='assets/img/dipen.jpg')
+            .main_article__testimonial
+              | Testimonials
+          .footer
+            p.footer__paragraph
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quo.
+            button.btn_1
+              span.btn_1__visible Click Here
+              span.btn_1__invisible Thank you

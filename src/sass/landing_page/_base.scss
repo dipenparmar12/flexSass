@@ -65,19 +65,9 @@ body{
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--color-grey-dark-2);
-
-    line-height: 1.6;    
-
-    background-image: 
-        linear-gradient(to right bottom,
-            var(--color-primary-light),var(--color-primary-dark)
-        );
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    min-height: 90vh;   
+    line-height: 1.6;
+    min-height: 90vh;
 }
-
 
 // Remove Text UnderLine Clean Default Styles 
 a{

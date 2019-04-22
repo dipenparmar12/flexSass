@@ -51,10 +51,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
-    "jshint": "^2.10.2"
-  },
-  "dependencies": {
-    "gulp-pub": "^1.1.2",
+    "jshint": "^2.10.2",
     "gulp-pug": "^4.0.1"
   }
 }

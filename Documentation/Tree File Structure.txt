@@ -1,0 +1,33 @@
+﻿├───dest
+│   ├───assets 
+│   │   ├───img
+│   │   │   └───SVG
+│   │   ├───script
+│   │   └───style
+│   │       ├───artical
+│   │       ├───dashboard
+│   │       ├───feature_section
+│   │       ├───landing_page
+│   │       ├───modern_site
+│   │       ├───nest
+│   │       └───nest2
+│   ├───img
+│   └───sass
+│       └───landing_page
+└───src
+    ├───img
+    │   └───SVG
+    ├───sass
+    │   ├───artical
+    │   ├───dashboard
+    │   ├───feature_section
+    │   ├───landing_page
+    │   ├───modern_site
+    │   ├───nest
+    │   │   ├───abstracts
+    │   │   ├───base
+    │   │   ├───components
+    │   │   ├───layout
+    │   │   └───pages
+    │   └───nest2
+    └───script

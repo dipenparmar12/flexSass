@@ -1,0 +1,3 @@
+﻿http://browsershots.org/
+
+https://www.softwaretestinghelp.com/best-cross-browser-testing-tools-to-ease-your-browser-compatibility-testing-efforts/

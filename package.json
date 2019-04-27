@@ -38,7 +38,7 @@
   "homepage": "https://github.com/dipenparmar12/flexSass#readme",
   "devDependencies": {
     "autoprefixer": "^9.5.0",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.5",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.1",
     "gulp-concat": "^2.6.1",

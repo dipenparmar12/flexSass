@@ -1,0 +1,3 @@
+https://natours.netlify.com
+http://trillo.netlify.com
+https://nexter.netlify.com

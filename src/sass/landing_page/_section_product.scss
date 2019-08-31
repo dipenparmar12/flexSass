@@ -1,0 +1,26 @@
+/////////////////////////////
+/// Section Product_box
+
+.section_product_box{
+    max-width: 100%;
+    padding: 10rem 30rem;
+    background-color:  rgba(113, 238, 176,1);
+
+    color:#000;
+
+    &__wrapper{
+        height: 40rem;
+        padding: 2rem 4rem;
+        box-shadow:1px 1rem 3rem 0px rgba(0, 0,0, 0.274);
+    }
+
+    &__heading{
+        font-size: 6rem;
+        font-weight: 600;
+    }
+
+    &__body{
+        font-size: 2rem;
+    }
+
+}

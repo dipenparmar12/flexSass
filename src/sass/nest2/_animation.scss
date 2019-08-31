@@ -1,0 +1,66 @@
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.1;
+        left: -10%;
+    }
+    50% {
+        opacity: 0.2;
+        left: -10%;
+    }
+    80% {
+        opacity: 0.4;
+        left: -10%;
+    }
+    100% {
+        opacity: 0.9;
+        left: -0%;
+    }
+}
+
+@keyframes movzoominout {
+    0% {
+        font-size: 7rem;
+    }
+    50% {
+        font-size: 1rem;
+    }
+    100% {
+        font-size: 2rem;
+    }
+}
+
+@keyframes run_right_zoom_in {
+    0% {
+        opacity: 0;
+        transform: translatex(-50rem) scale(0.0);
+    }
+    1% {
+        opacity: 0.3;
+        transform: translatex(-50rem) scale(.2);
+    }
+    80% {
+        opacity: 0.3;
+        transform: translatex(1rem) scale(.2);
+    }
+    100% {
+        opacity: 0.4;
+        transform: translate(0) scale(1);
+    }
+}
+
+@keyframes btn_fade_in {
+    0%,
+    10%,
+    20%,
+    50%,
+    80% {
+        opacity: 0.01;
+    }
+    99% {
+        opacity: 1;
+        transform: translate(0) scale(1);
+    }
+}

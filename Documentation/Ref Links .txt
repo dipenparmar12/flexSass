@@ -1,0 +1,22 @@
+What is Node 
+https://www.w3schools.com/nodejs/nodejs_intro.asp
+https://www.codecademy.com/articles/what-is-node
+
+
+What is NPM 
+https://www.w3schools.com/nodejs/nodejs_npm.asp
+https://nodejs.org/en/knowledge/getting-started/npm/what-is-npm/
+https://docs.npmjs.com/about-npm/
+
+
+GULP Pluging
+http://brandonclapp.github.io/what-is-gulp-js-and-why-use-it/
+
+
+FlexBox Intro and Tutorial 
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+
+BEM Introduction
+http://getbem.com/introduction/
+https://medium.com/@dannyhuang_75970/what-is-bem-and-why-you-should-use-it-in-your-project-ab37c6d10b79

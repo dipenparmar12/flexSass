@@ -1,0 +1,1445 @@
+﻿<!DOCTYPE html><html lang="en"><head>
+    <base href="https://github.com/webdevdjm/gulp-grid-flex-starter">
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-dsqgdBtnWun6oxDg9q1xezEyITXQ8QsMdFm+JDoDk6Tzx9AEE1XcUEhWff/M2Jv85ucTVJCjp/2fGbh6Omtrgg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-41c2037bf12f1e46d8f08b88a04a8d8f.css">
+  
+    <link crossorigin="anonymous" media="all" integrity="sha512-n1/Sn4ahCjLOJgIY5GxsC7k3nVQQh98dP1VWD8IY4bRInT8s8JasCOxhuTytlkZb+CotYkJ0UKp/cmTgBtGxIw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-f37aa76d9a859bbd1f37f62042aaae62.css">
+    
+    
+    
+    
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>webdevdjm/gulp-grid-flex-starter: A starter website powered with Gulp</title>
+    <meta name="description" content="A starter website powered with Gulp. Contribute to webdevdjm/gulp-grid-flex-starter development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars0.githubusercontent.com/u/8439273?s=400&v=4"><meta name="twitter:site" content="@github"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="webdevdjm/gulp-grid-flex-starter"><meta name="twitter:description" content="A starter website powered with Gulp. Contribute to webdevdjm/gulp-grid-flex-starter development by creating an account on GitHub.">
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/8439273?s=400&v=4"><meta property="og:site_name" content="GitHub"><meta property="og:type" content="object"><meta property="og:title" content="webdevdjm/gulp-grid-flex-starter"><meta property="og:url" content="https://github.com/webdevdjm/gulp-grid-flex-starter"><meta property="og:description" content="A starter website powered with Gulp. Contribute to webdevdjm/gulp-grid-flex-starter development by creating an account on GitHub.">
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6NDE0Mzk3NzkwOjU4NTI2ZWNiODM0YmI4YjU3Y2Y0N2Q2NjljNDg2YTZmZjBkODUwOGZhNmY1NzUzMWY3MzY3ZjZlNzc0N2E3YzQ=--2d8fd264b41906a1e267efdf10fe8b04752f9d66">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="A0E1:3F2A:16A1CD:209143:5D00C652" data-pjax-transient="">
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com"><meta name="octolytics-app-id" content="github"><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event"><meta name="octolytics-dimension-request_id" content="A0E1:3F2A:16A1CD:209143:5D00C652"><meta name="octolytics-dimension-region_edge" content="ap-south-1"><meta name="octolytics-dimension-region_render" content="iad"><meta name="octolytics-actor-id" content="22059959"><meta name="octolytics-actor-login" content="dipenparmar12"><meta name="octolytics-actor-hash" content="8d4d859da6556b5ee6941f8075f7cb5bb0925a9e2cce4ab470843bf50e929022">
+<meta name="analytics-location" content="/<user-name>/<repo-name>" data-pjax-transient="true">
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta class="js-ga-set" name="userId" content="cb22cc8e9520f4e238cbbf1c17b70a24">
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="dipenparmar12">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NDI5ZTk2Yjc4MzhmMDE3MjU3YjFhZDQzZmQ5YjJjZjRkY2JhNDFkYzEyOTAzYjUyNGY0MTI2Y2JmYzIxYzdmZXx7InJlbW90ZV9hZGRyZXNzIjoiMTA2LjIyMi40NS44NCIsInJlcXVlc3RfaWQiOiJBMEUxOjNGMkE6MTZBMUNEOjIwOTE0Mzo1RDAwQzY1MiIsInRpbWVzdGFtcCI6MTU2MDMzMTg1OSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,NOTIFY_ON_BLOCK,RELATED_ISSUES">
+
+  <meta name="html-safe-nonce" content="c762d5d35a732a4dd0921b03acaf63dd21a7b454">
+
+  <meta http-equiv="x-pjax-version" content="6462a31c6f520fa1ded71e8b9e211599">
+  
+
+      <link href="https://github.com/webdevdjm/gulp-grid-flex-starter/commits/master.atom" rel="alternate" title="Recent Commits to gulp-grid-flex-starter:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/webdevdjm/gulp-grid-flex-starter git https://github.com/webdevdjm/gulp-grid-flex-starter.git">
+
+  <meta name="octolytics-dimension-user_id" content="8439273"><meta name="octolytics-dimension-user_login" content="webdevdjm"><meta name="octolytics-dimension-repository_id" content="110359168"><meta name="octolytics-dimension-repository_nwo" content="webdevdjm/gulp-grid-flex-starter"><meta name="octolytics-dimension-repository_public" content="true"><meta name="octolytics-dimension-repository_is_fork" content="false"><meta name="octolytics-dimension-repository_network_root_id" content="110359168"><meta name="octolytics-dimension-repository_network_root_nwo" content="webdevdjm/gulp-grid-flex-starter"><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false">
+
+
+    <link rel="canonical" href="https://github.com/webdevdjm/gulp-grid-flex-starter" data-pjax-transient="">
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" data-savepage-href="https://github.githubassets.com/favicon.ico" href="data:image/vnd.microsoft.icon;base64,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AAAAAAAAKysrBhYWGUcWFhiVFRUYvxUVGNkWFhfzFhYX8xUVGNkVFRi/FhYYlRYWGUcrKysGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-enabled" content="true">
+
+
+
+  <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+
+  
+    <script id="savepage-contentloaders" type="application/javascript">
+      "use strict"
+      savepage_ContentLoaders();
+      function savepage_ContentLoaders()
+      {
+        var resourceMimeType = new Array();
+        var resourceBase64Data = new Array();
+        var resourceBlobUrl = new Array();
+        window.addEventListener("DOMContentLoaded",
+        function(event)
+        {
+          savepage_ShadowLoader(5);
+          savepage_ResourceLoader(5);
+          document.getElementById('savepage-contentloaders').remove();
+        },false);
+        function savepage_ShadowLoader(c){createShadowDOMs(0,document.documentElement);function createShadowDOMs(a,b){var i;if(b.localName=="iframe"||b.localName=="frame"){if(a<c){try{if(b.contentDocument.documentElement!=null){createShadowDOMs(a+1,b.contentDocument.documentElement)}}catch(e){}}}else{if(b.children.length>=1&&b.children[0].localName=="template"&&b.children[0].hasAttribute("data-savepage-shadowroot")){b.attachShadow({mode:"open"}).appendChild(b.children[0].content);b.removeChild(b.children[0]);for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)createShadowDOMs(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)createShadowDOMs(a,b.children[i])}}}
+        function savepage_ResourceLoader(f){createBlobURLs();replaceReferences(0,document.documentElement);function createBlobURLs(){var i,j,binaryString,blobData;var a=new Array();for(i=0;i<resourceMimeType.length;i++){if(typeof resourceMimeType[i]!="undefined"){binaryString=atob(resourceBase64Data[i]);resourceBase64Data[i]="";a.length=0;for(j=0;j<binaryString.length;j++){a[j]=binaryString.charCodeAt(j)}blobData=new Blob([new Uint8Array(a)],{type:resourceMimeType[i]});resourceMimeType[i]="";resourceBlobUrl[i]=window.URL.createObjectURL(blobData)}}}function replaceReferences(a,b){var i,regex1,regex2,csstext,blobData;regex1=/url\(\s*((?:"[^"]+")|(?:'[^']+')|(?:[^\s)]+))\s*\)/gi;regex2=/data:[^;]*;resource=(\d+);base64,/i;if(b.hasAttribute("style")){csstext=b.style.cssText;b.style.cssText=csstext.replace(regex1,replaceCSSRef)}if(b.localName=="style"){csstext=b.textContent;b.textContent=csstext.replace(regex1,replaceCSSRef)}else if(b.localName=="link"&&(b.rel.toLowerCase()=="icon"||b.rel.toLowerCase()=="shortcut icon")){if(b.href!="")b.href=b.href.replace(regex2,replaceRef)}else if(b.localName=="body"){if(b.background!="")b.background=b.background.replace(regex2,replaceRef)}else if(b.localName=="img"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="input"&&b.type.toLowerCase()=="image"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="audio"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.load()}}else if(b.localName=="video"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.load()}if(b.poster!="")b.poster=b.poster.replace(regex2,replaceRef)}else if(b.localName=="source"){if(b.src!=""){b.src=b.src.replace(regex2,replaceRef);b.parentElement.load()}}else if(b.localName=="track"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}else if(b.localName=="object"){if(b.data!="")b.data=b.data.replace(regex2,replaceRef)}else if(b.localName=="embed"){if(b.src!="")b.src=b.src.replace(regex2,replaceRef)}if(b.localName=="iframe"||b.localName=="frame"){if(a<f){if(b.hasAttribute("data-savepage-sameorigin")){blobData=new Blob([decodeURIComponent(b.src.substr(29))],{type:"text/html;charset=utf-8"});b.onload=function(){try{if(b.contentDocument.documentElement!=null){replaceReferences(a+1,b.contentDocument.documentElement)}}catch(e){}};b.src=window.URL.createObjectURL(blobData)}}}else{if(b.shadowRoot!=null){for(i=0;i<b.shadowRoot.children.length;i++)if(b.shadowRoot.children[i]!=null)replaceReferences(a,b.shadowRoot.children[i])}for(i=0;i<b.children.length;i++)if(b.children[i]!=null)replaceReferences(a,b.children[i])}}function replaceCSSRef(a,b,c,d){var e=new Array();e=b.match(/data:[^;]*;resource=(\d+);base64,/i);if(e!=null)return"url("+resourceBlobUrl[+e[1]]+")";else return a}function replaceRef(a,b,c,d){return resourceBlobUrl[+b]}}
+        resourceMimeType[8] = "image/gif"; resourceBase64Data[8] = "R0lGODlhIAAgAPIHAIKCgrOzs8zMzMrKyuLi4pmZmfj4+P///yH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExODcxRjk1OUM5NDdDMUYyMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxQzYwRTc2RDU0RTIxMUUxOTgyOUQyOEIyQjYxRkU0MCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxQzYwRTc2QzU0RTIxMUUxOTgyOUQyOEIyQjYxRkU0MCIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjAzODAxMTc0MDcyMDY4MTE4NzFGOTU5Qzk0N0MxRjIzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjAxODAxMTc0MDcyMDY4MTE4NzFGOTU5Qzk0N0MxRjIzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEBQoABwAsAAAAACAAIAAAA/94umwUpQAQAzEs62Xc/CBwYZtmCEVgVIMgDFDhCFfJxTJpnkOrm5HUr+ToCYaKVYRg2xBex4whdiHUbI4R9IcqCA4GY9VKnvUwhB4zWVGke/C4fLBOR8EQUnjOPydpGA5gHH19OoEOASp/hXx3PE8BAwtvjXNrBy9pAV9ulnyYdoqhn5eULaOnpXGkAqmeq3Ctr2CxcDp2MJ0KL7G7B3aukxy9n3e8dA+LHJWFV4xVgw56VsUtVkiIYE+Bxzxwxw2A0G5R33G/p8dvTOeOGuziPtsufVJb99cM9pT4Jr1X+BWZR6TXkT1zOhhEIuXJBWvoZjxrAqZDow4MKXZ4YhAFUEYFCQAAIfkEBQoABwAsAAAAAB8AFgAAA2d4uqwToRQ4mr1M6l0OwRcRVIEimEoZABXoQKV7AHQHwqec0sBnwbrGgGd5xIIMQi0J8SEZAlrrAMk9GyvA4nHFAAofQzc4sI5D5TNIMHCqG+w3Ji630OvQKd7U3i8IaX4OZntiggcJACH5BAUKAAcALAIAAAAeAB4AAAODeLprJGIMSAy7mBnJ+zBWlgkVRZwnpBSCuESTuxR04MKEfNFFyEQt3UXAG058QkaNIUm6aMFIzimiKR7UZwCZdU27T0AQnCkAbORMAFBIZwYAgBsjiM+H9vsCLtcr1m1+B2ZofmZjfl96AYh3AgGFi5FzBJADgpCTaY+QfpmXfgOaCgkAIfkEBQoABgAsFgACAAoAHQAAA0k4QdZuIY7nRAy0kZub7NvSWVgXTF3qBAWTsSg1FCUlFEWK63l29zKaqRB7sFwqCkBECQAAvmex8QQ2BE+osYo0ZK2NAmCqUSUAACH5BAUKAAcALAoAAgAWAB4AAANfeLqsJC1KJcaAMx9isZ6V9zVGOE7WKXGiShFufAbyMgStKgRDvQW0GgHoGwZlRt+uV7vlVEefrxAwTAvX56dARXKxsq/V9Y0uCgAqMIAuGNhPAmBOrxPGkyF3zg3ANAkAIfkEBQoABwAsAQAKAB8AFgAAA2J4utz+x8BJlRg1u0u0P8QgfJ5IauZZperEtk44wg9H19j9SEQA6IfA7AAABG6CwFExKA5PvUBnUShOT8ocowjQepTLBoEbriSVlGoxA/ZCmstCOVBgSj+dgn7Pvw2UelkZCQAh+QQFCgAHACwAAAoAHgAWAAADYmh03P4wClCivS1QzGEBQScyADCMYimgncpy5fleXzhbWnVL2x4tvoghoAsKgIXijjBYHQTJ4EDGICpRBkHzkSw4Udpvw9BFMbe4MkeLvkCrgcB0Gg8oxBxFfV/3seNTeA8JACH5BAUKAAcALAAAAQAWAB8AAANoeLpL/JANEKJdBegbSaZcpAFCCH2OKWmlymiV2wSAbF9efA+FbgeFwU1RKLRuxSGxoDwUj7+gkueT5ZpYxaAqCwSgVm9q5216A+OfF+zaloeEwMAgGNjvdvbDgO/PQwYEAnUDgwQGBgkAOw==";
+      }
+    </script>
+    <meta name="savepage-url" content="https://github.com/webdevdjm/gulp-grid-flex-starter">
+    <meta name="savepage-title" content="webdevdjm/gulp-grid-flex-starter: A starter website powered with Gulp">
+    <meta name="savepage-date" content="Wed Jun 12 2019 02:31:55 GMT-0700 (Pacific Daylight Time)">
+    <meta name="savepage-state" content="Standard Items; Used resource loader; Retained cross-origin frames; Removed unsaved URLs; Max frame depth = 5; Max resource size = 50MB; Max resource time = 10s;">
+    <meta name="savepage-version" content="15.0">
+    <meta name="savepage-comments" content="">
+    <meta name="savepage-resourceloader" content=""></head>
+
+  <body class="logged-in env-production min-width-lg intent-mouse">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+          <header class="Header" role="banner">
+
+    <div class="Header-item">
+      <a class="Header-link" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+
+    </div>
+
+
+    <div class="Header-item Header-item--full">
+        <div class="header-search mr-3 scoped-search site-scoped-search js-site-search position-relative js-jump-to" role="combobox" aria-owns="jump-to-results" aria-label="Search or jump to" aria-haspopup="listbox" aria-expanded="false">
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="110359168" data-scoped-search-url="/webdevdjm/gulp-grid-flex-starter/search" data-unscoped-search-url="/search" action="/webdevdjm/gulp-grid-flex-starter/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text" class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable" data-hotkey="s,/" name="q" value="" placeholder="Search or jump to…" data-unscoped-placeholder="Search or jump to…" data-scoped-placeholder="Search or jump to…" autocapitalize="off" aria-autocomplete="list" aria-controls="jump-to-results" aria-label="Search or jump to…" data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=t9y70HL8FofJqjy25fM0yo7lBg7BuFuca/+I5h6qUcCPFaWMNIzRTrMQXfPwKMS1jw79V9J4sFyAdMHk6AZ8rw==" spellcheck="false" autocomplete="off">
+          <input value="" type="hidden" class="js-site-search-type-field" name="type">
+            <img data-savepage-src="https://github.githubassets.com/images/search-key-slash.svg" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMTlweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMTkgMjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE5IDIwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CgkgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOTc5QTlDIiBvcGFjaXR5PSIwLjQiIGQ9Ik0zLjUsMC41aDEyYzEuNywwLDMsMS4zLDMsM3YxM2MwLDEuNy0xLjMsMy0zLDNoLTEyYy0xLjcsMC0zLTEuMy0zLTN2LTEzQzAuNSwxLjgsMS44LDAuNSwzLjUsMC41eiIvPgoJIDxwYXRoIGZpbGw9IiM5NzlBOUMiIGQ9Ik0xMS44LDZMOCwxNS4xSDcuMUwxMC44LDZMMTEuOCw2eiIvPgo8L3N2Zz4K" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
+      <img data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" src="data:image/gif;base64,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" alt="Octocat Spinner Icon" class="m-2" width="28">
+    </li>
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+
+      <nav class="d-flex" aria-label="Global">
+
+  <a class="js-selected-navigation-item Header-link  mr-3" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+    Pull requests
+</a>
+  <a class="js-selected-navigation-item Header-link  mr-3" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+    Issues
+</a>
+    <div class="mr-3">
+      <a class="js-selected-navigation-item Header-link" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
+        Marketplace
+</a>      
+    </div>
+
+  <a class="js-selected-navigation-item Header-link  mr-3" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+    Explore
+</a>
+</nav>
+
+    </div>
+
+
+    <div class="Header-item position-relative">
+      
+
+    </div>
+
+    <div class="Header-item">
+      
+
+    <a aria-label="You have unread notifications" class="Header-link notification-indicator position-relative tooltipped tooltipped-s js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:unread" data-channel="notification-changed:22059959" href="/notifications">
+        <span class="mail-status unread"></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"></path></svg>
+</a>
+    </div>
+
+
+    <div class="Header-item position-relative">
+      <details class="details-overlay details-reset">
+  <summary class="Header-link" aria-label="Create new…" data-ga-click="Header, create new, icon:add" aria-haspopup="menu">
+    <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path></svg> <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw" role="menu">
+    
+<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div role="none" class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="webdevdjm/gulp-grid-flex-starter">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="/webdevdjm/gulp-grid-flex-starter/issues/new" data-ga-click="Header, create new issue" data-skip-pjax="">
+      New issue
+    </a>
+
+
+  </details-menu>
+</details>
+
+    </div>
+
+    <div class="Header-item position-relative mr-0">
+      
+<details class="details-overlay details-reset">
+  <summary class="Header-link" aria-label="View profile and more" data-ga-click="Header, show menu, icon:avatar" aria-haspopup="menu">
+    <img alt="@dipenparmar12" class="avatar" data-savepage-src="https://avatars1.githubusercontent.com/u/22059959?s=40&v=4" src="data:image/jpeg;base64,/9j/2wCEAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDIBCQkJDAsMGA0NGDIhHCEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIACgAKAMBIgACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/ALaT2UsSwGOcKrMwPmjPOPb2q35dlBaNPiXY4ZWBcHGMe1Y5mgz8lm57/fP9BU91Mb3w1fWS2nkkQuUc7jtzgE/lk/hUtFq+xyOp+MA0zLo9nJKgODJLk5PsBitrwtrz31ndrcSSW04/dshBIB4IP6GqenWMum2Npi5t4rdFy/7necnqTx+tT6NY3E2ptczhJllVQWgUgck8kdjipU7uxrKk4xud9aXJubLPm207EhMfcyMcjPHtTvsx/wCfG1/7/wD/ANlXPW25B5ZtbmMAlgecZx05HsKm8yb/AJ43H5j/AAqrGd2XdJ0XXNQQ3M84t7cq23znOTkHBAFc54l+06XBc2f253uQOGBO3B4JGamh8a3V7YhpT+8yULDjPv8ArS6BZv4o8RX9xcvm0htzF17nOf681ouVtNGMuZJo4WXUJrOBIt0c0YQAiQnK8dcivQtHt7D+xIlhJ81wrs20gjIBxj6Y/OvNr/R47PVZ02NcmJ8bg5Geoxge49a9X0OGZtU0y1lhjiH2J0bYeW2r8hIx1zn8qVShGOsepVPEzmuWXQrNp00qP5ckx2uGDKnb86Z/Zt5/z1uP++T/AI1aOqTwu6xyBD0ICgUn9s3v/P0fyFc/Ozo5TBGn2tvYXOI1UW8RfHT5s9PxJre8KadLpnhmRgv+kzxmQ5HJJyR/Ssi8/wCQfqv/AFzH/oS12em/8giH/riv8q6Ka0uc9TdnAeHPDV9Pqgu9RJChy6xk9/U13VvIH8UWXlcxxIyFh2+U9aisP9afqadpf/IZkqpyblqZwioqyOW16Ewa7qEUr7YzMWUZxlTyP51l+Vaf3v1rX8a/8jFN/up/IVz1cs3aTOynHmjc/9k=" height="20" width="20">
+    <span class="dropdown-caret"></span>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw mt-2" style="width: 180px" role="menu">
+    <div class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/dipenparmar12" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">dipenparmar12</strong></a></div>
+    <div role="none" class="dropdown-divider"></div>
+
+      <div class="pl-3 pr-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&link_mentions=0&truncate=1">
+        
+<div class="js-user-status-container
+    user-status-compact rounded-1 px-2 py-1 mt-2
+    border
+  " data-team-hovercards-enabled="">
+  <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
+    <summary class="btn-link btn-block link-gray no-underline js-toggle-user-status-edit toggle-user-status-edit " aria-haspopup="dialog" role="button" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:8439273,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:22059959,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;}}" data-hydro-click-hmac="a060751228e054922c5fd5ed97c9b17c2e3adb91185c8ffd0c08cfd3240f0604">
+      <div class="d-flex">
+        <div class="f6 lh-condensed user-status-header
+          d-inline-block v-align-middle
+            user-status-emoji-only-header circle
+            pr-2
+" style="max-width: 29px">
+          <div class="user-status-emoji-container flex-shrink-0 mr-1 mt-1 lh-condensed-ultra v-align-bottom" style="">
+            <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"></path></svg>
+          </div>
+        </div>
+        <div class="
+          d-inline-block v-align-middle
+          
+          
+           css-truncate css-truncate-target 
+           user-status-message-wrapper f6" style="line-height: 20px;">
+          <div class="d-inline-block text-gray-dark v-align-text-top text-left">
+              <span class="text-gray ml-2">Set status</span>
+          </div>
+        </div>
+      </div>
+</summary>    <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1" aria-modal="true">
+      <!-- '"` --><!-- </textarea></xmp> --><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&link_mentions=0&truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="put"><input type="hidden" name="authenticity_token" value="6uIoR0+UitIXiX0h5E9bk12ug4riMDlQonvAVyTVamcVHpJ3OAHyQ5fOI0RvW0+gR6BG/XFrZoZ2ajHpQdH0eg==">
+        <div class="Box-header bg-gray border-bottom p-3">
+          <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog="">
+            <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+          </button>
+          <h3 class="Box-title f5 text-bold text-gray-dark">Edit status</h3>
+        </div>
+        <input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
+        <input type="hidden" name="organization_id" class="js-user-status-org-id-field" value="">
+        <div class="px-3 py-2 text-gray-dark">
+          <div class="js-characters-remaining-container position-relative mt-2">
+            <div class="input-group d-table form-group my-0 js-user-status-form-group">
+              <span class="input-group-button d-table-cell v-align-middle" style="width: 1%">
+                <button type="button" aria-label="Choose an emoji" class="btn-outline btn js-toggle-user-status-emoji-picker btn-open-emoji-picker p-0">
+                  <span class="js-user-status-original-emoji" hidden=""></span>
+                  <span class="js-user-status-custom-emoji"></span>
+                  <span class="js-user-status-no-emoji-icon">
+                    <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"></path></svg>
+                  </span>
+                </button>
+              </span>
+              <input type="text" autocomplete="off" data-suggest-emoji="/autocomplete/emoji" data-suggest-mention="/autocomplete/user-suggestions" data-no-org-url="/autocomplete/user-suggestions" data-org-url="/suggestions?mention_suggester=1" data-maxlength="80" class="d-table-cell width-full form-control js-user-status-message-field js-characters-remaining-field" placeholder="What's happening?" name="message" value="" aria-label="What is your current status?">
+              <div class="error">Could not update your status, please try again.</div>
+            </div>
+            <div style="margin-left: 53px" class="my-1 text-small label-characters-remaining js-characters-remaining" data-suffix="remaining" hidden="">
+              80 remaining
+            </div>
+          </div>
+          <include-fragment class="js-user-status-emoji-picker" data-url="/users/status/emoji"></include-fragment>
+          <div class="overflow-auto ml-n3 mr-n3 px-3 border-bottom" style="max-height: 33vh">
+            <div class="user-status-suggestions js-user-status-suggestions collapsed overflow-hidden">
+              <h4 class="f6 text-normal my-3">Suggestions:</h4>
+              <div class="mx-3 mt-2 clearfix">
+                  <div class="float-left col-6">
+                      <button type="button" value=":palm_tree:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png">🌴</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          On vacation
+                        </div>
+                      </button>
+                      <button type="button" value=":face_with_thermometer:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.png">🤒</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Out sick
+                        </div>
+                      </button>
+                  </div>
+                  <div class="float-left col-6">
+                      <button type="button" value=":house:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png">🏠</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Working from home
+                        </div>
+                      </button>
+                      <button type="button" value=":dart:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message ws-normal text-left" style="border-left: 1px solid transparent">
+                          Focusing
+                        </div>
+                      </button>
+                  </div>
+              </div>
+            </div>
+            <div class="user-status-limited-availability-container">
+              <div class="form-checkbox my-0">
+                <input type="checkbox" name="limited_availability" value="1" class="js-user-status-limited-availability-checkbox" data-default-message="I may be slow to respond." aria-describedby="limited-availability-help-text-truncate-true-compact-true" id="limited-availability-truncate-true-compact-true">
+                <label class="d-block f5 text-gray-dark mb-1" for="limited-availability-truncate-true-compact-true">
+                  Busy
+                </label>
+                <p class="note" id="limited-availability-help-text-truncate-true-compact-true">
+                  When others mention you, assign you, or request your review,
+                  GitHub will let them know that you have limited availability.
+                </p>
+              </div>
+            </div>
+          </div>
+            
+
+<div class="d-inline-block f5 mr-2 pt-3 pb-2">
+  <div class="d-inline-block mr-1">
+    Clear status
+  </div>
+
+  <details class="js-user-status-expire-drop-down f6 dropdown details-reset details-overlay d-inline-block mr-2">
+    <summary class="f5 btn-link link-gray-dark border px-2 py-1 rounded-1" aria-haspopup="true">
+      <div class="js-user-status-expiration-interval-selected d-inline-block v-align-baseline">
+        Never
+      </div>
+      <div class="dropdown-caret"></div>
+    </summary>
+
+    <ul class="dropdown-menu dropdown-menu-se pl-0 overflow-auto" style="width: 220px; max-height: 15.5em">
+      <li>
+        <button type="button" class="btn-link dropdown-item js-user-status-expire-button ws-normal" title="Never">
+          <span class="d-inline-block text-bold mb-1">Never</span>
+          <div class="f6 lh-condensed">Keep this status until you clear your status or edit your status.</div>
+        </button>
+      </li>
+      <li class="dropdown-divider" role="none"></li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 30 minutes" value="2019-06-12T03:00:59-07:00">
+            in 30 minutes
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 1 hour" value="2019-06-12T03:30:59-07:00">
+            in 1 hour
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="in 4 hours" value="2019-06-12T06:30:59-07:00">
+            in 4 hours
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="today" value="2019-06-12T23:59:59-07:00">
+            today
+          </button>
+        </li>
+        <li>
+          <button type="button" class="btn-link dropdown-item ws-normal js-user-status-expire-button" title="this week" value="2019-06-16T23:59:59-07:00">
+            this week
+          </button>
+        </li>
+    </ul>
+  </details>
+  <input class="js-user-status-expiration-date-input" type="hidden" name="expires_at" value="">
+</div>
+
+          <include-fragment class="js-user-status-org-picker" data-url="/users/status/organizations"></include-fragment>
+        </div>
+        <div class="d-flex flex-items-center flex-justify-between p-3 border-top">
+          <button type="submit" disabled="" class="width-full btn btn-primary mr-2 js-user-status-submit">
+            Set status
+          </button>
+          <button type="button" disabled="" class="width-full js-clear-user-status-button btn ml-2 ">
+            Clear status
+          </button>
+        </div>
+</form>    </details-dialog>
+  </details>
+</div>
+
+      </div>
+      <div role="none" class="dropdown-divider"></div>
+
+
+
+    <a role="menuitem" class="dropdown-item" href="/dipenparmar12" data-ga-click="Header, go to profile, text:your profile">Your profile</a>
+    <a role="menuitem" class="dropdown-item" href="/dipenparmar12?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a>
+
+    <a role="menuitem" class="dropdown-item" href="/dipenparmar12?tab=projects" data-ga-click="Header, go to projects, text:your projects">Your projects</a>
+
+    <a role="menuitem" class="dropdown-item" href="/dipenparmar12?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a>
+      <a role="menuitem" class="dropdown-item" href="https://gist.github.com/mine" data-ga-click="Header, your gists, text:your gists">Your gists</a>
+
+    <div role="none" class="dropdown-divider"></div>
+    <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
+    <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
+    <!-- '"` --><!-- </textarea></xmp> --><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="Ry0mawnKNDZFBPZvuhG7SJiOce/xAUAlzuKFO7iiT25RjHfAQDPeITG7srqo5gZWlJlz7N8tMHR538am3imSfg==">
+      
+      <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+        Sign out
+      </button>
+</form>  </details-menu>
+</details>
+
+    </div>
+
+  </header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+</div>
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled="">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container" data-pjax-container="">
+      
+  
+
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+
+
+
+    <li hidden="">
+      
+
+    </li>
+
+  <li>
+    
+    <!-- '"` --><!-- </textarea></xmp> --><form data-remote="true" class="clearfix js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="aIZU3VjCrsbGu0xlHAQ1g5RRdIi9MMMx2wCl+jBEEuYVbZp+IJ/N+5D8uTf84RjSjWaCyPh/HuIu53Lb/atX0A==">      <input type="hidden" name="repository_id" value="110359168">
+
+      <details class="details-reset details-overlay select-menu float-left">
+        <summary class="select-menu-button float-left btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;WATCH_BUTTON&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="f255f8a16b6f89c0d27b3ddfb3038858aaf584f940e02f672de9657e927df74a" data-ga-click="Repository, click Watch settings, action:files#disambiguate" aria-haspopup="menu">          <span data-menu-button="">
+              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+              Watch
+          </span>
+</summary>        <details-menu class="select-menu-modal position-absolute mt-5" style="z-index: 99;" role="menu">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+          </div>
+          <div class="select-menu-list">
+            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Not watching</span>
+                <span class="description">Be notified only when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents="">
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                  Watch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="release_only" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Releases only</span>
+                <span class="description">Be notified of new releases, and when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents="">
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                  Unwatch releases
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Watching</span>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents="">
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
+                  Unwatch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"></path></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Ignoring</span>
+                <span class="description">Never be notified.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents="">
+                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"></path></svg>
+                  Stop ignoring
+                </span>
+              </div>
+            </button>
+          </div>
+        </details-menu>
+      </details>
+        <a class="social-count js-social-count" href="/webdevdjm/gulp-grid-flex-starter/watchers" aria-label="1 user is watching this repository">
+          1
+        </a>
+</form>
+  </li>
+
+  <li>
+      <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --><form class="starred js-social-form" action="/webdevdjm/gulp-grid-flex-starter/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="Jw884oM3rprGQ7KfnCWnBC9ZzmN8JqV1yYzai47ggFrqXzOZM8avKGiH1dhvR3cJBraA3tnp+9HpJh7+XVFc0w==">
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar webdevdjm/gulp-grid-flex-starter" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="8b2cf603d11a602f34cf58a61cc09a2666447bc7f896cb014092b16869ae65ad" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+        Unstar
+</button>        <a class="social-count js-social-count" href="/webdevdjm/gulp-grid-flex-starter/stargazers" aria-label="0 users starred this repository">
+          0
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --><form class="unstarred js-social-form" action="/webdevdjm/gulp-grid-flex-starter/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="8fo+xH6inlQwohS8caZni9jZKZlcJKtfUTYq8qtTKIwKX0URajwlHUYnqSxDMsbnoMQI9dfdXtPvWIbKKscduQ==">
+      <input type="hidden" name="context" value="repository">
+      <button type="submit" class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Star webdevdjm/gulp-grid-flex-starter" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="80281ae9c120a09247cf4593923fffdb35fa6002d260549254314c3329af67fd" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+        Star
+</button>        <a class="social-count js-social-count" href="/webdevdjm/gulp-grid-flex-starter/stargazers" aria-label="0 users starred this repository">
+          0
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <!-- '"` --><!-- </textarea></xmp> --><form class="btn-with-count" action="/webdevdjm/gulp-grid-flex-starter/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="jjg1kqSf6kJDn1yr2hC0V69OsgCS4M72bkPn58WSMQcFTQ9kSpxp7hSn9ZTKIzYauw4SZ6s/bnOUFCjwAYzyOQ==">
+            <button class="btn btn-sm btn-with-count" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FORK_BUTTON&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="c1afe10c3c4ebbb749e43a311fe7be8a22daa698f102c35710a4dafd1991d16f" data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork" type="submit" title="Fork your own copy of webdevdjm/gulp-grid-flex-starter to your account" aria-label="Fork your own copy of webdevdjm/gulp-grid-flex-starter to your account">              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+              Fork
+</button></form>
+    <a href="/webdevdjm/gulp-grid-flex-starter/network/members" class="social-count" aria-label="0 users forked this repository">
+      0
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=8439273" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/webdevdjm">webdevdjm</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/webdevdjm/gulp-grid-flex-starter">gulp-grid-flex-starter</a></strong>
+  
+
+</h1>
+
+    </div>
+    
+<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax container" itemscope="" itemtype="http://schema.org/BreadcrumbList" aria-label="Repository" data-pjax="#js-repo-pjax-container">
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /webdevdjm/gulp-grid-flex-starter" href="/webdevdjm/gulp-grid-flex-starter">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /webdevdjm/gulp-grid-flex-starter/issues" href="/webdevdjm/gulp-grid-flex-starter/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope="" itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /webdevdjm/gulp-grid-flex-starter/pulls" href="/webdevdjm/gulp-grid-flex-starter/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /webdevdjm/gulp-grid-flex-starter/projects" href="/webdevdjm/gulp-grid-flex-starter/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+      Projects
+      <span class="Counter">0</span>
+</a>
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /webdevdjm/gulp-grid-flex-starter/wiki" href="/webdevdjm/gulp-grid-flex-starter/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+      Wiki
+</a>
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy /webdevdjm/gulp-grid-flex-starter/security/advisories" href="/webdevdjm/gulp-grid-flex-starter/security/advisories">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="octicon" height="16px" width="16px">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 2l7-2 7 2v6.02C15 12.69 9.69 16 8 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L8 1l6 1.75v5.268C14 12.104 9.45 15 8 15c-1.45 0-6-2.896-6-6.982V2.75z"></path>
+    <path d="M3 3.5L8 2v12c-1.207 0-5-2.482-5-5.985V3.5z"></path>
+</svg>
+
+      Security
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse people /webdevdjm/gulp-grid-flex-starter/pulse" href="/webdevdjm/gulp-grid-flex-starter/pulse">
+      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"></path></svg>
+      Insights
+</a>
+
+</nav>
+
+
+  </div>
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+    
+    
+
+
+      <div class="">  <div class="f4">
+        <span class="text-gray-dark mr-2" itemprop="about">
+          A starter website powered with Gulp
+        </span>
+  </div>
+</div>
+
+    <div class="repository-topics-container mt-2 mb-3 js-topics-list-container">  <div class="list-topics-container f6">
+      <a class="topic-tag topic-tag-link " href="/topics/gh-pages" title="Topic: gh-pages" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:gh-pages">
+  gh-pages
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/sass" title="Topic: sass" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:sass">
+  sass
+</a>
+
+      <a class="topic-tag topic-tag-link " href="/topics/dist" title="Topic: dist" data-ga-click="Topic, repository page" data-octo-click="topic_click" data-octo-dimensions="topic:dist">
+  dist
+</a>
+
+  </div>
+</div>
+
+
+
+  <div class="overall-summary overall-summary-bottomless">
+    <div class="stats-switcher-viewport js-stats-switcher-viewport">
+      <div class="stats-switcher-wrapper">
+      <ul class="numbers-summary">
+        <li class="commits">
+          <a data-pjax="" href="/webdevdjm/gulp-grid-flex-starter/commits/master">
+              <svg class="octicon octicon-history" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 13H6V6h5v2H8v5zM7 1C4.81 1 2.87 2.02 1.59 3.59L0 2v4h4L2.5 4.5C3.55 3.17 5.17 2.3 7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-.34.03-.67.09-1H.08C.03 7.33 0 7.66 0 8c0 3.86 3.14 7 7 7s7-3.14 7-7-3.14-7-7-7z"></path></svg>
+              <span class="num text-emphasized">
+                12
+              </span>
+              commits
+          </a>
+        </li>
+        <li>
+          <a data-pjax="" href="/webdevdjm/gulp-grid-flex-starter/branches">
+            <svg class="octicon octicon-git-branch" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+            <span class="num text-emphasized">
+              2
+            </span>
+            branches
+          </a>
+        </li>
+
+        <li>
+          <a href="/webdevdjm/gulp-grid-flex-starter/releases">
+            <svg class="octicon octicon-tag" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.73 1.73C7.26 1.26 6.62 1 5.96 1H3.5C2.13 1 1 2.13 1 3.5v2.47c0 .66.27 1.3.73 1.77l6.06 6.06c.39.39 1.02.39 1.41 0l4.59-4.59a.996.996 0 0 0 0-1.41L7.73 1.73zM2.38 7.09c-.31-.3-.47-.7-.47-1.13V3.5c0-.88.72-1.59 1.59-1.59h2.47c.42 0 .83.16 1.13.47l6.14 6.13-4.73 4.73-6.13-6.15zM3.01 3h2v2H3V3h.01z"></path></svg>
+            <span class="num text-emphasized">
+              0
+            </span>
+            releases
+          </a>
+        </li>
+
+
+          <li data-contributors-hovercards-enabled="">
+              <a href="/webdevdjm/gulp-grid-flex-starter/graphs/contributors" data-hovercard-type="contributors" data-hovercard-url="/webdevdjm/gulp-grid-flex-starter/community_contributors/hovercard">
+  <svg class="octicon octicon-organization" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 12.999c0 .439-.45 1-1 1H7.995c-.539 0-.994-.447-.995-.999H1c-.54 0-1-.561-1-1 0-2.634 3-4 3-4s.229-.409 0-1c-.841-.621-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.442.58 2.5 3c.058 2.41-.159 2.379-1 3-.229.59 0 1 0 1s1.549.711 2.42 2.088C9.196 9.369 10 8.999 10 8.999s.229-.409 0-1c-.841-.62-1.058-.59-1-3 .058-2.419 1.367-3 2.5-3s2.437.581 2.495 3c.059 2.41-.158 2.38-1 3-.229.59 0 1 0 1s3.005 1.366 3.005 4z"></path></svg>
+    <span class="num text-emphasized">
+      1
+    </span>
+    contributor
+</a>          </li>
+
+          <li>
+            <a href="/webdevdjm/gulp-grid-flex-starter/blob/master/LICENSE">
+              <svg class="octicon octicon-law" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 4c-.83 0-1.5-.67-1.5-1.5S6.17 1 7 1s1.5.67 1.5 1.5S7.83 4 7 4zm7 6c0 1.11-.89 2-2 2h-1c-1.11 0-2-.89-2-2l2-4h-1c-.55 0-1-.45-1-1H8v8c.42 0 1 .45 1 1h1c.42 0 1 .45 1 1H3c0-.55.58-1 1-1h1c0-.55.58-1 1-1h.03L6 5H5c0 .55-.45 1-1 1H3l2 4c0 1.11-.89 2-2 2H2c-1.11 0-2-.89-2-2l2-4H1V5h3c0-.55.45-1 1-1h4c.55 0 1 .45 1 1h3v1h-1l2 4zM2.5 7L1 10h3L2.5 7zM13 10l-1.5-3-1.5 3h3z"></path></svg>
+                MIT
+            </a>
+          </li>
+      </ul>
+
+        <div class="repository-lang-stats">
+          <ol class="repository-lang-stats-numbers">
+            <li>
+                <a href="/webdevdjm/gulp-grid-flex-starter/search?l=css" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#563d7c;"></span>
+                  <span class="lang">CSS</span>
+                  <span class="percent">52.9%</span>
+                </a>
+            </li>
+            <li>
+                <a href="/webdevdjm/gulp-grid-flex-starter/search?l=html" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#e34c26;"></span>
+                  <span class="lang">HTML</span>
+                  <span class="percent">34.5%</span>
+                </a>
+            </li>
+            <li>
+                <a href="/webdevdjm/gulp-grid-flex-starter/search?l=javascript" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#f1e05a;"></span>
+                  <span class="lang">JavaScript</span>
+                  <span class="percent">12.6%</span>
+                </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <button type="button" class="d-flex p-0 repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+      <span class="language-color" aria-label="CSS 52.9%" style="width:52.9%; background-color:#563d7c;" itemprop="keywords">CSS</span>
+      <span class="language-color" aria-label="HTML 34.5%" style="width:34.5%; background-color:#e34c26;" itemprop="keywords">HTML</span>
+      <span class="language-color" aria-label="JavaScript 12.6%" style="width:12.6%; background-color:#f1e05a;" itemprop="keywords">JavaScript</span>
+  </button>
+
+
+
+
+
+    <div class="mt-2">
+      
+    </div>
+
+  <div class="file-navigation in-mid-page d-flex flex-items-start">
+  
+<details class="details-reset details-overlay select-menu branch-select-menu  hx_rsm" id="branch-select-menu">
+  <summary class="btn btn-sm select-menu-button css-truncate" data-hotkey="w" title="Switch branches or tags" aria-haspopup="menu">
+    <i>Branch:</i>
+    <span class="css-truncate-target">master</span>
+  </summary>
+
+  <details-menu class="select-menu-modal hx_rsm-modal position-absolute" style="z-index: 99;" src="/webdevdjm/gulp-grid-flex-starter/ref-list/master?source_action=disambiguate&source_controller=files" preload="" role="menu">
+    <include-fragment class="select-menu-loading-overlay anim-pulse">
+      <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"></path></svg>
+    </include-fragment>
+  </details-menu>
+</details>
+
+
+        <a class="btn btn-sm new-pull-request-btn" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;NEW_PULL_REQUEST_BUTTON&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="820f56dbf929b2978db85076b0b319a8ce0729b2be6cb2069ff2d73a64b7e83e" data-ga-click="Repository, new pull request, location:repo overview" data-pjax="true" href="/webdevdjm/gulp-grid-flex-starter/pull/new/master">New pull request</a>
+
+  <div class="breadcrumb flex-auto">
+    
+  </div>
+
+  <div class="BtnGroup">
+      
+  <!-- '"` --><!-- </textarea></xmp> --><form class="BtnGroup-parent" action="/webdevdjm/gulp-grid-flex-starter/new/master" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="Gc3uxIHlKt0xA7w0V3T0sLsJayvxAqbUgODZ79W7K+ybgmAVflyDCk6+63twUv8KQskYgdK754RMl9GbW74R5w==">
+    <button class="btn btn-sm BtnGroup-item" type="submit" data-disable-with="Creating file…">
+      Create new file
+    </button>
+</form>
+
+      
+  <a href="/webdevdjm/gulp-grid-flex-starter/upload/master" class="btn btn-sm BtnGroup-item">
+    Upload files
+  </a>
+
+
+    <a class="btn btn-sm empty-icon float-right BtnGroup-item" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;FIND_FILE_BUTTON&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="861b68fde69873a6aace015163909546ff2cb4cd08d4f61bde07f743fa2a48e5" data-ga-click="Repository, find file, location:repo overview" data-hotkey="t" data-pjax="true" href="/webdevdjm/gulp-grid-flex-starter/find/master">Find File</a>
+  </div>
+
+
+    
+
+    <details class="get-repo-select-menu js-get-repo-select-menu  position-relative details-overlay details-reset">
+  <summary class="btn btn-sm ml-2 btn-primary" data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;repository_id&quot;:110359168,&quot;target&quot;:&quot;CLONE_OR_DOWNLOAD_BUTTON&quot;,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="0c1cd70284f81037784abf027b182cf2bbedcb377c58a6579c7a3cbed11603f4">
+    Clone or download
+    <span class="dropdown-caret"></span>
+</summary>  <div class="position-relative">
+    <div class="get-repo-modal dropdown-menu dropdown-menu-sw pb-0 js-toggler-container  js-get-repo-modal">
+
+      <div class="get-repo-modal-options">
+          <div class="clone-options https-clone-options">
+              <!-- '"` --><!-- </textarea></xmp> --><form data-remote="true" action="/users/set_protocol?protocol_selector=ssh&protocol_type=clone" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="IXP+XddPJa5jevWVqCatuAq3ttmSRw8vh6P6ehscvdHmBeoVFHOd5lZly/FEo92kcktSfTmSf0oRrzD5E4WgJA=="><button name="button" type="submit" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;USE_SSH&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="9c6e432380789f734e0289c260d2b04ddeb5959164d02333ff881cbe9f4447f4" class="btn-link btn-change-protocol js-toggler-target float-right">Use SSH</button></form>
+
+            <h4 class="mb-1">
+              Clone with HTTPS
+              <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+              </a>
+            </h4>
+            <p class="mb-2 get-repo-decription-text">
+              Use Git or checkout with SVN using the web URL.
+            </p>
+
+            <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect="" value="https://github.com/webdevdjm/gulp-grid-flex-starter.git" aria-label="Clone this repository at https://github.com/webdevdjm/gulp-grid-flex-starter.git" readonly="">
+  <div class="input-group-button">
+    <clipboard-copy value="https://github.com/webdevdjm/gulp-grid-flex-starter.git" aria-label="Copy to clipboard" class="btn btn-sm" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;COPY_URL&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="c90dca2862e3bdb1f2e3c46e32460fe90b2b46dc04db3f0016cae00e81b220ac" tabindex="0" role="button"><svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg></clipboard-copy>
+  </div>
+</div>
+
+          </div>
+
+          <div class="clone-options ssh-clone-options">
+              <!-- '"` --><!-- </textarea></xmp> --><form data-remote="true" action="/users/set_protocol?protocol_selector=https&protocol_type=clone" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="yliuOeJsNo/xuvwJN6FwE4WetGDtKLuNuJc42y/u7GENLrpxIVCOx8Slwm3bJAAP/WJQxEb9y+gum/JYJ3fxlA=="><button name="button" type="submit" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;USE_HTTPS&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="495140da962091802ec87ed055d77b883fabbd08bd5e533af3b340b2c34e8a74" class="btn-link btn-change-protocol js-toggler-target float-right">Use HTTPS</button></form>
+              <h4 class="mb-1">
+                Clone with SSH
+                <a class="muted-link" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank" title="Which remote URL should I use?">
+                  <svg class="octicon octicon-question" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 10h2v2H6v-2zm4-3.5C10 8.64 8 9 8 9H6c0-.55.45-1 1-1h.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5V7H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7z"></path></svg>
+                </a>
+              </h4>
+
+                <div class="flash flash-warn my-3">
+                  You don't have any public SSH keys in your GitHub account.
+                  You can <a href="/settings/ssh/new">add a new public key</a>, or try cloning this repository via <button class="btn-link js-toggler-target">HTTPS.</button>
+                </div>
+
+              <p class="mb-2 get-repo-decription-text">
+                Use an SSH key and passphrase from account.
+              </p>
+
+              <div class="input-group">
+  <input type="text" class="form-control input-monospace input-sm" data-autoselect="" value="git@github.com:webdevdjm/gulp-grid-flex-starter.git" aria-label="Clone this repository at git@github.com:webdevdjm/gulp-grid-flex-starter.git" readonly="">
+  <div class="input-group-button">
+    <clipboard-copy value="git@github.com:webdevdjm/gulp-grid-flex-starter.git" aria-label="Copy to clipboard" class="btn btn-sm" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;COPY_URL&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="c90dca2862e3bdb1f2e3c46e32460fe90b2b46dc04db3f0016cae00e81b220ac" tabindex="0" role="button"><svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"></path></svg></clipboard-copy>
+  </div>
+</div>
+
+          </div>
+        <div class="mt-2">
+            <a class="btn btn-outline get-repo-btn tooltipped tooltipped-s tooltipped-multiline js-get-repo" aria-label="Clone webdevdjm/gulp-grid-flex-starter to your computer and use it in GitHub Desktop." data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;OPEN_IN_DESKTOP&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="edd62d6cf05365828489bc5e836f05d9789eb57a829b34273e959d21290c2158" data-open-app="windows" href="x-github-client://openRepo/https://github.com/webdevdjm/gulp-grid-flex-starter">Open in Desktop</a>
+
+<a class="btn btn-outline get-repo-btn  " rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;DOWNLOAD_ZIP&quot;,&quot;git_repository_type&quot;:&quot;REPOSITORY&quot;,&quot;repository_id&quot;:110359168,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="4ea898b16d6eca11ff6aa39a3c3640ba0352c14aad67b337cbf1ea034ab3080f" data-ga-click="Repository, download zip, location:repo overview" href="/webdevdjm/gulp-grid-flex-starter/archive/master.zip">Download ZIP</a>
+
+        </div>
+      </div>
+
+
+      <div class="js-modal-download-mac py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-windows py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching GitHub Desktop<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://desktop.github.com/">download GitHub Desktop</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-xcode py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Xcode<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://developer.apple.com/xcode/">download Xcode</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+      <div class="js-modal-download-visual-studio py-2 px-3 d-none">
+        <h4 class="lh-condensed mb-3">Launching Visual Studio<span class="animated-ellipsis-container"><span class="animated-ellipsis">...</span></span></h4>
+        <p class="text-gray">If nothing happens, <a href="https://visualstudio.github.com/">download the GitHub extension for Visual Studio</a> and try again.</p>
+        <p><button class="btn-link js-get-repo-modal-download-back">Go back</button></p>
+      </div>
+
+    </div>
+  </div>
+</details>
+
+</div>
+
+
+  
+
+
+  <div class="commit-tease js-details-container Details d-flex rounded-top-1" data-issue-and-pr-hovercards-enabled="">
+    
+<div class="AvatarStack flex-self-start ">
+  <div class="AvatarStack-body" aria-label="webdevdjm">
+        <a class="avatar" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=8439273" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/webdevdjm">
+          <img height="20" width="20" alt="@webdevdjm" data-savepage-src="https://avatars3.githubusercontent.com/u/8439273?s=60&v=4" src="">
+</a>  </div>
+</div>
+
+    <div class="flex-auto f6 mr-3">
+      
+      <a href="/webdevdjm/gulp-grid-flex-starter/commits?author=webdevdjm" class="commit-author tooltipped tooltipped-s user-mention" aria-label="View all commits by webdevdjm">webdevdjm</a>
+
+
+  
+
+
+        <a data-pjax="true" title="Merging" class="message text-inherit" href="/webdevdjm/gulp-grid-flex-starter/commit/2b51e34307ababd4ae66fe6346f3b5dfcd4ab546">Merging</a>
+
+    </div>
+    <div class="no-wrap">
+      Latest commit
+      <a class="commit-tease-sha" href="/webdevdjm/gulp-grid-flex-starter/commit/2b51e34307ababd4ae66fe6346f3b5dfcd4ab546" data-pjax="">
+        2b51e34
+      </a>
+      <span itemprop="dateModified"><relative-time datetime="2019-04-24T11:11:18Z" title="Apr 24, 2019, 4:11 AM PDT">on Apr 24</relative-time></span>
+    </div>
+  </div>
+
+
+
+
+
+<div class="file-wrap">
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/webdevdjm/gulp-grid-flex-starter/tree/2b51e34307ababd4ae66fe6346f3b5dfcd4ab546">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax="">
+    <thead>
+      <tr>
+        <th><span class="sr-only">Type</span></th>
+        <th><span class="sr-only">Name</span></th>
+        <th><span class="sr-only">Latest commit message</span></th>
+        <th><span class="sr-only">Commit time</span></th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item navigation-focus" aria-selected="true">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".vscode" id="7fde71560fa9376d2d93a25b42d719f5-0274a81f8ee9ca3669295dc40f510bd2021d0043" href="/webdevdjm/gulp-grid-flex-starter/tree/master/.vscode">.vscode</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Added Footer and Syling" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/23c7349e225a121350cdabd8214e685b44f634ae">Added Footer and Syling</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-11-16T21:29:16Z" title="Nov 16, 2017, 1:29 PM PST">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="img" id="b798abe6e1b1318ee36b0dcb3fb9e4d3-1137950cc955ef3602f26ccac8d5f958778c9a3d" href="/webdevdjm/gulp-grid-flex-starter/tree/master/img">img</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Added Favicon" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/fca8ca3251a899337d0e6a86b177d02b94f67a27">Added Favicon</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-11-11T18:54:35Z" title="Nov 11, 2017, 10:54 AM PST">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="js" id="32981a13284db7a021131df49e6cd203-ebc6618bf93911b8941ef7819e8947414bb013a0" href="/webdevdjm/gulp-grid-flex-starter/tree/master/js">js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Initial Commit" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/07705ecf90f88812a68840a8de270be06fe44e88">Initial Commit</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-11-11T16:07:38Z" title="Nov 11, 2017, 8:07 AM PST">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item" aria-selected="false">
+          <td class="icon">
+            <svg aria-label="directory" class="octicon octicon-file-directory" viewBox="0 0 14 16" version="1.1" width="14" height="16" role="img"><path fill-rule="evenodd" d="M13 4H7V3c0-.66-.31-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V5c0-.55-.45-1-1-1zM6 4H1V3h5v1z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="scss" id="d711b55165b29776dc8996509be4c9f8-f9902bc43202f4da18a3e2f130a6e1bf6e1ee614" href="/webdevdjm/gulp-grid-flex-starter/tree/master/scss">scss</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Updated dependencies and Gulp file for v4" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/ba098af1ab207c82bda01a63f0f975482940ca1b">Updated dependencies and Gulp file for v4</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-24T11:00:33Z" title="Apr 24, 2019, 4:00 AM PDT">2 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".DS_Store" id="edb274d8c594429b8ccc684d79d771f6-be616ad90d7443bda5f201a2904c757c056736d6" href="/webdevdjm/gulp-grid-flex-starter/blob/master/.DS_Store">.DS_Store</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Updated dependencies and Gulp file for v4" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/ba098af1ab207c82bda01a63f0f975482940ca1b">Updated dependencies and Gulp file for v4</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-24T11:00:33Z" title="Apr 24, 2019, 4:00 AM PDT">2 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title=".gitignore" id="a084b794bc0759e7a6b77810e01874f2-1452431ea0f2b556ac6ac923b7635f321ca2cfa3" href="/webdevdjm/gulp-grid-flex-starter/blob/master/.gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Merging" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/2b51e34307ababd4ae66fe6346f3b5dfcd4ab546">Merging</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-24T11:11:18Z" title="Apr 24, 2019, 4:11 AM PDT">2 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="LICENSE" id="9879d6db96fd29134fc802214163b95a-fb817474bb9c4c6a6f77b863067fd297fa4c550d" itemprop="license" href="/webdevdjm/gulp-grid-flex-starter/blob/master/LICENSE">LICENSE</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Initial Commit" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/07705ecf90f88812a68840a8de270be06fe44e88">Initial Commit</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-11-11T16:07:38Z" title="Nov 11, 2017, 8:07 AM PST">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="README.md" id="04c6e90faac2675aa89e2176d2eec7d8-8e25c7e0eb2c89c20ebfa8adf61d6fe30fc90d33" href="/webdevdjm/gulp-grid-flex-starter/blob/master/README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Added Footer and Syling" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/23c7349e225a121350cdabd8214e685b44f634ae">Added Footer and Syling</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2017-11-16T21:29:16Z" title="Nov 16, 2017, 1:29 PM PST">2 years ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="gulpfile.js" id="b9e12334e9eafd8341a6107dd98510c9-e4899ec80214caf6e0a1a398697dfba87d53d770" href="/webdevdjm/gulp-grid-flex-starter/blob/master/gulpfile.js">gulpfile.js</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Updated dependencies and Gulp file for v4" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/ba098af1ab207c82bda01a63f0f975482940ca1b">Updated dependencies and Gulp file for v4</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-24T11:00:33Z" title="Apr 24, 2019, 4:00 AM PDT">2 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="index.html" id="eacf331f0ffc35d4b482f1d15a887d3b-330b57a406184cbd2b779078b3fe92127caca359" href="/webdevdjm/gulp-grid-flex-starter/blob/master/index.html">index.html</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Updated dependencies and Gulp file for v4" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/ba098af1ab207c82bda01a63f0f975482940ca1b">Updated dependencies and Gulp file for v4</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-24T11:00:33Z" title="Apr 24, 2019, 4:00 AM PDT">2 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item" aria-selected="false">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="package-lock.json" id="32607347f8126e6534ebc7ebaec4853d-034054cc296c053b545af4b4e9bba9704b3ae65d" href="/webdevdjm/gulp-grid-flex-starter/blob/master/package-lock.json">package-lock.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Updated dependencies and Gulp file for v4" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/ba098af1ab207c82bda01a63f0f975482940ca1b">Updated dependencies and Gulp file for v4</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-24T11:00:33Z" title="Apr 24, 2019, 4:00 AM PDT">2 months ago</time-ago></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item" aria-selected="false">
+          <td class="icon">
+            <svg aria-label="file" class="octicon octicon-file" viewBox="0 0 12 16" version="1.1" width="12" height="16" role="img"><path fill-rule="evenodd" d="M6 5H2V4h4v1zM2 8h7V7H2v1zm0 2h7V9H2v1zm0 2h7v-1H2v1zm10-7.5V14c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V2c0-.55.45-1 1-1h7.5L12 4.5zM11 5L8 2H1v12h10V5z"></path></svg>
+            <img width="16" height="16" class="spinner" alt="" data-savepage-src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" src="data:image/gif;resource=8;base64,">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a class="js-navigation-open" title="package.json" id="b9cfc7f2cdf78a7f4b91a753d10865a2-bbc7c1108d1996109332a9f944d95a106884f3da" href="/webdevdjm/gulp-grid-flex-starter/blob/master/package.json">package.json</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a data-pjax="true" title="Updated dependencies and Gulp file for v4" class="link-gray" href="/webdevdjm/gulp-grid-flex-starter/commit/ba098af1ab207c82bda01a63f0f975482940ca1b">Updated dependencies and Gulp file for v4</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time-ago datetime="2019-04-24T11:00:33Z" title="Apr 24, 2019, 4:00 AM PDT">2 months ago</time-ago></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+
+
+  <div id="readme" class="Box Box--condensed instapaper_body md js-code-block-container">
+    <div class="Box-header d-flex flex-items-center flex-justify-between px-2">
+      <h3 class="Box-title pr-3">
+        <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"></path></svg>
+        README.md
+      </h3>
+    </div>
+        <div class="Popover anim-scale-in js-tagsearch-popover" hidden="" data-tagsearch-url="/webdevdjm/gulp-grid-flex-starter/find-symbols" data-tagsearch-ref="master" data-tagsearch-path="README.md" data-tagsearch-lang="Markdown" data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:110359168,&quot;ref&quot;:&quot;master&quot;,&quot;client_id&quot;:&quot;527516789.1558598446&quot;,&quot;originating_request_id&quot;:&quot;A0E1:3F2A:16A1CD:209143:5D00C652&quot;,&quot;originating_url&quot;:&quot;https://github.com/webdevdjm/gulp-grid-flex-starter&quot;,&quot;referrer&quot;:&quot;https://www.google.com/&quot;,&quot;user_id&quot;:22059959}}" data-hydro-click-hmac="835a6d9c8e38d530dcfe7f352b8e944f3cad82a52723bd86d4a91036dc9eb52d">
+  <div class="Popover-message Popover-message--large Popover-message--top-left TagsearchPopover mt-1 mx-auto Box box-shadow-large">
+    <div class="TagsearchPopover-content js-tagsearch-popover-content overflow-auto">
+    </div>
+  </div>
+</div>
+
+      <div class="Box-body">
+        <article class="markdown-body entry-content p-5" itemprop="text"><h2><a id="user-content-gulpsassgridflex-starter-environment" class="anchor" aria-hidden="true" href="#gulpsassgridflex-starter-environment"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Gulp/Sass/Grid/Flex Starter Environment</h2>
+<p>Tooling:</p>
+<ul>
+<li>Sass (LibSass)</li>
+<li>Autoprefixer</li>
+<li>CSS Minification</li>
+<li>JSHint</li>
+<li>Scss Lint (based on <a href="https://github.com/causes/scss-lint/blob/master/config/default.yml">this</a> config)</li>
+<li>HTML Minification</li>
+<li>BrowserSync</li>
+<li>Image Minification</li>
+<li>GH-Pages deployment from dist/ folder</li>
+</ul>
+<h2><a id="user-content-summary" class="anchor" aria-hidden="true" href="#summary"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Summary</h2>
+<p>Basic web starter template. I used <a href="https://github.com/una/gulp-starter-env">this repo</a> as a starting point. Updated the plug-ins, made some changes to the build process, and layed out a basic site template with CSS Grid as a superstructure, using Flexbox and Grid throughout for layout and positioning. No frameworks or other bloat to slow things down. All code and images optimized for best performance. Goal here is to come out running with a site that is as close to 100 on <a href="https://developers.google.com/speed/pagespeed/insights" rel="nofollow">Google Page Speed Insigts</a> as possible.</p>
+<h2><a id="user-content-requirements" class="anchor" aria-hidden="true" href="#requirements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Requirements:</h2>
+<p>Node and npm (Node Package Manager). On Macs I recommend using <a href="https://www.npmjs.com/package/homebrew/tutorial" rel="nofollow">Homebrew</a>.
+Windows you can use the installers.
+Tested with: Node v8.7.0, NPM v5.4.2</p>
+<h2><a id="user-content-usage" class="anchor" aria-hidden="true" href="#usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage:</h2>
+<ol>
+<li>Clone this repo with <code>git clone https://github.com/webdevdjm/gulp-grid-flex-starter</code> (in terminal) or download the zip</li>
+<li>Rename the folder that you just downloaded or cloned (if you wish). In terminal, <code>cd</code> (change directory) to that folder.</li>
+<li>When inside the directory which contains this project in terminal, type <code>npm install</code>.</li>
+<li>In the terminal, enter <code>gulp</code></li>
+<li>Take note of the Access URLs provided in your terminal. Your web page should pop up at <code>http://localhost:3000</code>. You can access this same page on your various devices in the same wifi network with the provided External URL. You can share the External URL with others and they'll see whats on your screen.</li>
+<li>Edit your Sass code inside of the scss folder. You can make subfolders inside of that to better organize your code. Prefix your sass files with an underscore. More info on using @import to organize your files <a href="http://sass-guidelin.es/#main-file" rel="nofollow">here</a></li>
+<li>Your minified files will be automagically created and updated in <code>dist/</code>. It will create your optimized css, html, and javascript files for you. Never edit files within the <code>dist/</code> folder. (Dist stands for Distribution)</li>
+<li>Keep gulp running while you're making changes. When you want to close out of the gulp task, in the terminal, hit <code>ctrl + C</code></li>
+</ol>
+<h2><a id="user-content-linting" class="anchor" aria-hidden="true" href="#linting"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Linting</h2>
+<p>This linter is the only <code>ruby</code> dependency in this project (and it's optional)</p>
+<p>File Linting is where you read your file to make sure that your code conforms to standards. You should be doing this continuously.</p>
+<p>If you're using a text editor like Sublime, I'd recommend installing <code>SublimeLinter</code> and <code>SublimeLinter-contrib-scss-lint</code>. You can also lint with gulp inside of your terminal by running <code>gulp scss-lint</code>. Similar linters are available for other text editors.</p>
+<h2><a id="user-content-deploying-to-gh-pages" class="anchor" aria-hidden="true" href="#deploying-to-gh-pages"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deploying to gh-pages</h2>
+<p>You can run <code>gulp deploy</code> to push your site onto the gh-pages branch. Then, you can navigate to it via <em>http://&lt; your-github-username &gt;.github.io/&lt; project-name &gt;</em> <strong>Note:</strong> this doesn't work if your project name is <em>&lt; your-github-username  &gt;.github.io</em>.</p>
+</article>
+      </div>
+  </div>
+
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg width-full px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">© 2019 <span title="0.95501s from unicorn-6dc46c94cc-w2t7s">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-CscuM031OY1b4Y69qXfPdzYnn+kLXLsTJaUlY6t+FbKFfPAQZt2SiWINzBKgCEz9EugSgf9ZCeAtF4M7EIIq0A==" type="application/javascript" data-savepage-src="https://github.githubassets.com/assets/frameworks-ce314189.js" src=""></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-KAj4sptW1HgORMpnGgRvrQhhtO7TJTsOAa9/Axl8kO1urMrNGjbcXQHl8YjHzHfXIfWy4dfNRg1lSNknOevdGA==" type="application/javascript" data-savepage-src="https://github.githubassets.com/assets/github-bootstrap-fce3c59a.js" src=""></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner" hidden="">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog"></template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  
+
+
+</body></html>

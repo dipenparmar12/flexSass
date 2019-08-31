@@ -86,7 +86,7 @@
  
 .btn-text{
     &:link,
-    &:visited,{    
+    &:visited{
     font-size: $default-font-size;
     color: $color-red;
     font-weight: 400;

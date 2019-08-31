@@ -1,0 +1,253 @@
+doctype html
+html
+  head
+    title My-Nest
+    // <meta name="viewport" content="width=device-width, iniitial-scale=1.0">
+    link(href='assets/style/nest/style.min.css', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,700,900', rel='stylesheet')
+  body
+    // Man heading Section 
+    header.header
+      .header__logo-box
+        .header__logo(alt='logo', src='assets/img/logo4.png')
+      .header__text-box
+        h1.heading-primary
+          span.heading-primary--main MY NeST 
+          br
+          span.heading-primary--sub  DESINGING SOLUTIONS
+        a.btn.btn--white.btn--animated(href='#') See Our Portfolio
+    // Section About us and some images
+    main
+      section.section-about
+        .u-cetner-text.u-margin-bottom-small
+          .heading-secondary
+            | DESIGN TO YOUR STYLE WITH MY NEST
+        // Some Text about us
+        .row
+          .col-1-of-2
+            h3.heading-tertiary.u-margin-bootom-small  Who we are 
+            p.paragraph
+              | Our aim is to lend a helping hand to all our customers in achieving their design goals and guiding them effortlessly through to the final, successful conclusion. please visit "What We Do" page to see the wide range or services we offer..
+            h3.heading-tertiary.u-margin-bootom-small  What is it 
+            p.paragraph
+              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti omnis dolore quasi? Sapiente ratione in.
+            a.btn-text(href='#') More about us → 
+          // Some about us or portfolio
+          .col-1-of-2
+            .composition
+              img.composition__photo.composition__photo--1(alt='demo1', src='assets/img/wall3.jpg')
+              img.composition__photo.composition__photo--2(alt='demo2', src='assets/img/wall3.jpg')
+              img.composition__photo.composition__photo--3(alt='demo2', src='assets/img/wall3.jpg')
+      section.section-features
+        .row
+          .col-1-of-4
+            .feature-box
+              i.feature-box__icon.icon-basic-clockwise
+              h3.heading-tertiary.u-margin-bootom-small  Save Time 
+              p.feature-box__text
+                | Lorem ipsum dolor sit amet doloramet Lorem ipsum dolor sit amet consecteturadipisicing elit.dolor sit amet Lorem ipsum dolor sit amet adipisicing elit.dolor sit
+          .col-1-of-4
+            .feature-box
+              i.feature-box__icon.icon-basic-paperplane
+              h3.heading-tertiary.u-margin-bootom-small  Fast 
+              p.feature-box__text
+                | Lorem ipsum dolor sit amet doloramet Lorem ipsum dolor sit amet consecteturadipisicing elit.dolor sit amet Lorem ipsum dolor sit amet adipisicing elit.dolor sit
+          .col-1-of-4
+            .feature-box
+              i.feature-box__icon.icon-basic-rss
+              h3.heading-tertiary.u-margin-bootom-small  Wide range 
+              p.feature-box__text
+                | Lorem ipsum dolor sit amet doloramet Lorem ipsum dolor sit amet consecteturadipisicing elit.dolor sit amet Lorem ipsum dolor sit amet adipisicing elit.dolor sit
+          .col-1-of-4
+            .feature-box
+              i.feature-box__icon.icon-basic-heart
+              h3.heading-tertiary.u-margin-bootom-small  Lovable 
+              p.feature-box__text
+                | Lorem ipsum dolor sit amet doloramet Lorem ipsum dolor sit amet consecteturadipisicing elit.dolor sit amet Lorem ipsum dolor sit amet adipisicing elit.dolor sit
+      section.section-tours
+        .heading-secondary
+          | OUR BEST PLAN AND PRICES (MY NEST)
+        .row
+          .col-1-of-4
+            .card
+              .card__side.card__side--front.card__side--front-1
+                .card__picture.card__picture--1
+                  | "Dipen"
+                h4.card__heading
+                  span.card-heading-span.card-heading-span--1 1BHK SIMPLE
+                .card__details
+                  ul
+                    li Color
+                    li Furniture
+                    li heading-primary
+                    li 1GB Storage
+                    li 500%GB HDD
+              .card__side.card__side--back.card__side--back-1
+                .card__cta
+                  .card__price-box
+                    p.card__price-only  Only
+                    p.card__price-value  $400
+                  a.btn.btn--white(href='#') Grab offer
+          .col-1-of-4
+            .card
+              .card__side.card__side--front.card__side--front-2
+                .card__picture.card__picture--2
+                  | Pic
+                h4.card__heading
+                  span.card-heading-span.card-heading-span--2 2BHK COOL
+                .card__details
+                  ul
+                    li Color
+                    li Furniture
+                    li heading-primary
+                    li 1GB Storage
+                    li 500%GB HDD
+              .card__side.card__side--back.card__side--back-2
+                .card__cta
+                  .card__price-box
+                    p.card__price-only  Only
+                    p.card__price-value  $600
+                  a.btn.btn--white(href='#') Grab offer
+          .col-1-of-4
+            .card
+              .card__side.card__side--front.card__side--front-3
+                .card__picture.card__picture--3
+                  | "Dipen"
+                h4.card__heading
+                  span.card-heading-span.card-heading-span--3 3BHK SUPER  
+                .card__details
+                  ul
+                    li Color
+                    li Furniture
+                    li heading-primary
+                    li 1GB Storage
+                    li 500%GB HDD
+              .card__side.card__side--back.card__side--back-3
+                .card__cta
+                  .card__price-box
+                    p.card__price-only  Only
+                    p.card__price-value  $800
+                  a.btn.btn--white(href='#') Grab offer
+          .col-1-of-4
+            .card
+              .card__side.card__side--front.card__side--front-4
+                .card__picture.card__picture--4
+                  | "Dipen"
+                h4.card__heading
+                  span.card-heading-span.card-heading-span--4 CUSTOMESED SPECIAL
+                .card__details
+                  ul
+                    li Color
+                    li Furniture
+                    li heading-primary
+                    li 1GB Storage
+                    li 500%GB HDD
+              .card__side.card__side--back.card__side--back-4
+                .card__cta
+                  .card__price-box
+                    p.card__price-only  Only
+                    p.card__price-value  $???
+                  a.btn.btn--white(href='#') Grab offer
+        .u-center-text
+          a#plans.btn.btn--green(href='#') SEE OUR ALL PLANS
+      section.section-stories
+        .bg-video
+          // <video class="bg-video__content" type="video/mp4" muted autoplay loop >
+          // <source src="assets/img/story_back2.mp4">
+          // </video>
+          // Mine
+          .u-cetner-text
+            .heading-secondary
+              | What other custmoers told about us
+          .row
+            .story
+              figure.story__shape
+                img.story__img(alt='IMG', src='assets/img/dpn.jpg')
+                figcaption.story__caption Dipen Parmar
+              .story__text
+                h3.heading-tertiary  I am dipen parmar & its all about computer 
+                p.paragraph
+                  | Our aim is to lend a helping hand to all our customers in achieving their design goalsto the final, successful conclusion. please visit "What We Do" page to see the wide range or services we offer.. design goalsto the final, successful conclusion. please visit "What We Do" page to see the wide
+            .story
+              figure.story__shape
+                img.story__img(alt='IMG', src='assets/img/dpn.jpg')
+                figcaption.story__caption  Web Devloper
+              .story__text
+                h3.heading-tertiary  I am dipen parmar & its all about computer 
+                p.paragraph
+                  | Our aim is to lend a helping hand to all our customers in achieving their design goalsto the final, successful conclusion. please visit "What We Do" page to see the wide range or services we offer.. design goalsto the final, successful conclusion. please visit "What We Do" page to see the wide
+            .u-cetner-text
+              a.btn-text.btn-text__red(href='#') Read more stories → 
+      section.section-story-jpg
+        .row
+          .u-cetner-text.u-margin-bottom-small
+            .heading-secondary
+              | Reviews and customers Feedback
+          .col-1-of-2
+            .story-jpg
+              | "
+          .col-1-of-2
+            .story-jpg
+              | Dipen Parmar
+              .story
+                figure.story__shape
+                  img.story__img(alt='IMG', src='assets/img/dpn.jpg')
+                  figcaption.story__caption  Web Devloper
+                .story__text
+                  h3.heading-tertiary Hello, I am dipen parmar 
+                  p.paragraph
+                    | Our aim is to lend a helping hand to all our customers in achieving their design goalsto the final, successful conclusion. please visit "What We Do" page to see the wide range or services we offer.. design goalst successful conclusion. please visit "What We Do" page to see the wide
+            .story-jpg
+              .story
+                figure.story__shape
+                  img.story__img(alt='IMG', src='assets/img/dpn.jpg')
+                  figcaption.story__caption  Web Devloper
+                .story__text
+                  h3.heading-tertiary  Hello, I am dipen parmar 
+                  p.paragraph
+                    | Our aim is to lend a helping hand to all our customers in achieving their design goalsto the final, successful conclusion. please visit "What We Do" page to see the wide range or services we offer.. design goalsto the final, successful conclusion. please visit "What We Do" page to see the wide on. please visit We Do" page to see the wide
+      section.section-book
+        .row
+          .book
+            .book__form
+              .form
+                .heading-secondary.u-margin-bottom-medium.u-small-text
+                  | Book your sweet home with us!
+                .form__group
+                  input#name.form__input(name='name', type='text', placeholder='Full name', autocomplete='off')
+                  label.form__lable(for='name') Full name
+                .form__group
+                  input#email.form__input(name='email', type='email', placeholder='Email Address', autocomplete='off')
+                  label.form__lable(for='email') Email name
+                div
+                  button
+                    a.btn-text.btn--green.u-color-white(href='#name')
+                      | Submit
+    footer.footer
+      .footer__logo-box
+        img.footer__logo(src='assets/img/simple-logo1.png')
+      .row
+        .col-1-of-2
+          .footer__navigation
+            ul.navigation
+              li.footer__item
+                a.footer__link(href='#') Terms 
+              li.footer__item
+                a.footer__link(href='#') Link1
+              li.footer__item
+                a.footer__link(href='#') link2
+              li.footer__item
+                a.footer__link(href='#') D_CSS
+              li.footer__item
+                a.footer__link(href='#') D_SWIFT
+              li.footer__item
+                a.footer__link(href='#') D_PHP
+        .col-1-of-2
+          p.footer__copyright
+            | Hello this is 
+            a.footer__link(href='#') dipen parmar
+            |  From any wareLorem ipsum 
+            a.footer__link(href='#') Facebook
+            |  sit amet consectetur adipisicing elit. Magnam 
+            a.footer__link(href='#') GOOGLE+ 
+            |  labore provident reprehenderit, at, sapiente ipsum debitis earum officia illum ab, fugit veritatis consequatur. Necessitatibus consectetur porro sequi autem.

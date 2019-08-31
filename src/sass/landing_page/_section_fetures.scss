@@ -1,0 +1,46 @@
+/////////////////////////////
+/// Section fetures_green , fetures_green__box_heading (Green)
+
+.fetures_green{
+    padding: 10rem 12rem;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: center;
+        
+    &__box{
+        flex: 0 0 34rem;
+        padding: 2rem;
+        height: 20rem;
+        margin: 3rem;
+        background-color:  rgb(213, 236, 236);
+        cursor: pointer;
+
+        transition: all .1s ease-out;
+        &:hover {
+            transform: scale(1.1) translateX(4px);
+            box-shadow:1px 1rem 3rem 0px rgba(128,126,126,.274);
+            border-radius: 5px;
+            background-color:  rgba(113, 238, 176,1);
+            color:rgb(32, 32, 32);
+        }
+    
+    }
+
+    &__box_heading{
+        text-align: center;
+        color:black;
+        font-size: 4.6rem;
+        letter-spacing: .71rem;
+    }
+
+    &__box_description{
+        display: flex;
+        text-align: center;
+        font-size: 4rem;
+        opacity: .7;
+        justify-content: center;
+    }
+
+}

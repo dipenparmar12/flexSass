@@ -1,0 +1,79 @@
+// --color-primary:    #eb2f64;
+// --color-primary-light:  #FF3366;
+// --color-primary-dark:   #BA265D;
+
+// grey-light-1
+// grey-light-2
+// grey-light-3
+// grey-light-4
+
+// grey-dark-1
+// grey-dark-2
+// grey-dark-3
+// grey-dark-4
+// grey-dark-5
+
+
+:root{
+    --color-primary:    #93eb2f;
+    --color-primary-light:  rgb(207, 255, 51);
+    --color-primary-dark:   rgb(105, 186, 38);
+
+    --color-grey-light-1:   #faf9f9;
+    --color-grey-light-2:   #f4f2f2;
+    --color-grey-light-3:   #f0eeee;
+    --color-grey-light-4:   #ccc;
+
+    --color-grey-dark-1:    #333;
+    --color-grey-dark-2:    #777;
+    --color-grey-dark-3:    rgb(151, 150, 150);
+    --color-grey-dark1:    #666;
+    --color-grey-dark2:    #555;
+
+    --border: 1px solid var(--color-grey-light-3);
+}
+
+$color-primary:    #93eb2f;
+$color-primary-light:  rgb(207, 255, 51);
+$color-primary-dark:   rgb(105, 186, 38);
+
+$color-grey-light-1:   #faf9f9;
+$color-grey-light-2:   #f4f2f2;
+$color-grey-light-3:   #f0eeee;
+$color-grey-light-4:   #ccc;
+
+$color-grey-dark-1:    #333;
+$color-grey-dark-2:    #777;
+$color-grey-dark-3:    #999;
+$color-grey-dark1:    #666;
+$color-grey-dark2:    #555;
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem == 10px?   #10px/16px=62.5%
+}
+body{ 
+    font-family: "Open-sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--color-grey-dark-2);
+    line-height: 1.6;
+    min-height: 90vh;
+}
+
+// Remove Text UnderLine Clean Default Styles 
+a{
+    text-decoration: none;
+    color:inherit;
+}
+ul li{
+    list-style-type: none;
+}

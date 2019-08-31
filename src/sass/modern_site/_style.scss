@@ -1,0 +1,732 @@
+
+
+/* ___________________________________________________*/
+
+/*      Write you comment here    */
+
+/*--------------------------------------------------------*/
+
+/*_____whole page cutmization_____*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+    color: #555;
+    font-family: 'Lato', 'arial', sans-serif;
+    font-size: 100%;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    font-size: 1.1rem;
+}
+
+
+.grid-pad {
+    margin: 15px;
+}
+
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    color: #a5a5a5;
+    font-weight: 300;
+    margin: 5px;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 3px;
+    color: #3498db;
+}
+
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.row {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.content {
+    text-align: left;
+}
+
+
+
+
+/*      Write you comment here    */
+
+/* for css normlized.css add margin top is 20px add (we remove it from below propery )*/
+
+/*      MAIN PAGE HEADER    */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 5px;
+}
+
+
+/*      Main Header and  background Color     */
+
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, 
+            from(rgba(0, 0, 0, 0.7)), 
+            to(rgba(0, 0, 0, 0.7))), 
+            url(../../img/wall3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), 
+                    rgba(0, 0, 0, 0.7)), 
+                    url(../../img/wall3.jpg);
+    /*background-image:  url(../../img/bhk3.jpg);*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+header {
+    min-height: 500px !important;
+
+}
+
+
+.hero-text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-85%);
+    transform: translate(-85%);
+}
+
+
+
+
+/*      Header Buttons Two buttons     */
+
+/*      TWO MAIN BUTTON     */
+
+.btn:link,
+.btn:active,
+.btn:visited {
+    padding: 9px 35px;
+    text-decoration: none;
+    border: 1px solid #3498db;
+    border-radius: 25px;
+    font-weight: 300;
+    margin: 10px;
+    margin-right: 15px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+
+}
+
+
+.btn-full:link,
+.btn-full:active,
+.btn-full:visited {
+    background-color: rgba(36, 135, 201, 0.5);
+    color: white;
+
+}
+
+.btn-ghost:link,
+.btn-ghost:active,
+.btn-ghost:visited {
+    color: #2487c9;
+}
+
+
+.btn:link:hover,
+.btn:hover {
+    background-color: rgba(36, 135, 201, 0.6);
+    color: #fff;
+}
+
+
+
+
+/* _____ LOGO MAIN NAVIGATION LIST _________________*/
+
+.row {
+    width: 100%;
+}
+
+.logo {
+    height: 80px;
+    margin: 20px;
+    /*width: auto;*/
+    float: left;
+}
+
+
+
+/* main NAVIGATION */
+.main-nav {
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-top: 60px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 15px;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    border: 2px solid transparent;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    padding-bottom: 20px;
+
+}
+
+.main-nav li a:hover {
+    border-bottom: 4px solid #2487c9;
+    padding-bottom: 4px;
+
+}
+
+
+
+
+
+
+/* ___________________________________________________*/
+
+/*      Section features 2nd sections     */
+
+/*--------------------------------------------------------*/
+
+.section-features {
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+}
+
+
+h2:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background-color: #2487c9;
+    margin: 20px auto;
+
+
+
+}
+
+/*________ICON DESING__________*/
+
+.my_icon {
+    font-size: 3.3rem;
+    color: #2487c9;
+    font-weight: 400;
+    margin-bottom: 10px;
+    display: block;
+}
+
+h3 {
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    color: #11d03d;
+    text-align: center;
+}
+
+.heading-desc {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* ___________________________________________________*/
+
+/*      Section features 2nd sections     */
+
+/*--------------------------------------------------------*/
+
+.home-gallary {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+.gallary-4 li {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    background-color: black;
+}
+
+.gallary-4-1 img {
+    opacity: 0.7;
+    width: 100%;
+    height: 220px;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+
+.gallary-4-1 img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.036);
+    transform: scale(1.036);
+}
+
+
+
+
+
+/* ___________________________________________________*/
+
+/*  Section Temp i dont know what i call this section   */
+
+/*--------------------------------------------------------*/
+
+.temp-section {
+    text-align: center;
+    padding: 30px 80px;
+
+}
+
+.temp-section-box:first-child {
+    text-align: right;
+}
+
+.col-1-2:last-child {
+    margin-top: 50px;
+}
+
+
+.block-no div {
+    border: 1px solid #2487c9;
+    border-radius: 60%;
+    display: inline-block;
+    padding: 14px;
+    margin-right: 25px;
+    width: 45px;
+    height: 49px;
+    text-align: right;
+    font-size: 1.3rem;
+    float: left;
+}
+
+
+.block-no p {
+    text-align: left;
+    margin: 30px;
+}
+
+
+
+.btns {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.btn-2 {
+    padding: 8px 29px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.btn-f {
+    color: blue;
+}
+
+.btn-g {
+    color: #de4b1f;
+}
+
+.btn-t {
+    color: #1baaf5;
+}
+
+
+
+.btn-2:hover {
+    color: white;
+    text-transform: none;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 5px 20px rgba(25, 24, 24, 0.47);
+    box-shadow: 0px 5px 20px rgba(25, 24, 24, 0.47);
+}
+
+.btn-f:hover {
+    background-color: #5858fd;
+}
+
+.btn-g:hover {
+    background-color: #e54a1b;
+    border-radius: 30px;
+}
+
+.btn-t:hover {
+    background-color: #1baaf5;
+    border-radius: 30px;
+}
+
+
+
+
+
+/* ___________________________________________________*/
+
+/*  Section Poducts   */
+
+/*--------------------------------------------------------*/
+
+.section-products {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px 60px;
+}
+
+.price-box {
+    height: 450px;
+    width: 100%;
+    background-color: white;
+    margin: 30px 0;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    border-radius: 2px;
+}
+
+
+.price-box:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 3px 30px rgba(25, 24, 24, 0.2);
+    box-shadow: 0px 3px 30px rgba(25, 24, 24, 0.2);
+}
+
+
+
+.price-box img {
+    width: 100%;
+    height: 170px;
+    opacity: .9;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    position: relative;
+}
+
+
+.img {
+    height: 170px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.price-box img:hover {
+    opacity: 1;
+}
+
+
+.product {
+    padding: 10px;
+}
+
+.price {
+    color: gray;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 5px;
+}
+
+
+.product-details ul {
+    list-style-type: none;
+    margin-top: 30px
+}
+
+.product-details ul li {
+    color: #9d9d9d;
+    padding: 4px;
+    width: auto;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.product-details ul li:after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: rgba(237, 237, 237, 0.37);
+    margin: 5px auto;
+}
+
+
+
+
+
+
+
+/* _________________________________________________________*/
+
+/*section-testimonials ...What our old cutomers say about us  */
+
+/*-----------------------------------------------------------*/
+
+.section-testimonials-bg {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../img/bhk12.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../img/bhk12.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0px;
+    padding-left: 100px;
+    overflow: hidden;
+}
+
+.section-testimonials {
+    text-align: center;
+}
+
+.testimonials-text {
+    font-family: cursive;
+    font-weight: 3s00;
+    font-size: 1.4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*
+.testimonials-text:before{
+    content: "\201c";
+    font-size: 250%;
+    top: -10px;
+    position: relative;
+} */
+
+.testimonials-name {
+    display: block;
+    text-align: left;
+}
+
+.testimonials-img {
+    height: 70px;
+    border-radius: 100px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+blockquote {
+    color: white;
+    text-align: left;
+}
+
+
+
+
+
+/* _________________________________________________________*/
+
+/*section-Contect Form  */
+
+/*-----------------------------------------------------------*/
+
+.section-form {
+    padding: 50px 60px;
+    width: 80%;
+    margin: 80px auto;
+}
+
+.input-margin {
+    margin: 30px;
+}
+
+input[name] {
+    width: 80%;
+}
+
+
+input,
+lable,
+select,
+textarea {
+    padding: 5px 20px;
+}
+
+.btn-submit {
+    padding: 9px 35px;
+    text-decoration: none;
+    border: 1px solid #3498db;
+    border-radius: 25px;
+    font-weight: 300;
+    margin-right: 15px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    background-color: rgba(36, 135, 201, 0.6);
+    color: #fff;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+.btn-submit:active {
+    background-color: rgba(36, 201, 36, 0.6);
+}
+
+
+
+
+/* _________________________________________________________*/
+
+/* FOOTER */
+
+/*-----------------------------------------------------------*/
+
+.setion-footer {
+    text-align: center;
+    background-color: #4a4747;
+    color: #939393;
+    padding-top: 50px;
+}
+
+.footer-nav li,
+.footer-icons li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: #939393;
+    padding: 7px;
+    font-size: 1.3rem;
+    -webkit-transition: all .2s;
+    transition: all .2s
+}
+
+.footer-nav li a:hover {
+    color: white;
+}
+
+
+.footer-text {
+    margin-top: 70px;
+}
+
+.footer-icons {
+    width: 50%;
+    text-align: right;
+}
+
+.my_icon {
+    margin: 20px;
+}
+
+
+
+
+
+
+/* Fixed Navigation  */
+
+
+.sticky {
+	width : 100%;
+	height:50px;
+	position:fixed ; 
+	top:0px;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.97);
+	color:blue !important;
+	z-index:1000;
+	box-shadow: 0 2px 10px 1px #efefef;
+}
+
+.sticky .logo{
+	position: relative;
+	height: 35px;
+	margin: 2px;
+	left:20px;
+}
+
+.sticky .main-nav li {
+    margin-top: 5px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    font-size:16px;
+	color: blue;
+	padding: 5px 10px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    padding-bottom: 10px;
+}
+
+.sticky .main-nav li a:link:hover,
+.sticky .main-nav li a:visited:hover {
+    color: red;  
+	padding-bottom: 5px;
+}
+

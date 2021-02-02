@@ -1,10 +1,10 @@
 {
   "name": "flexsass",
   "version": "1.0.0",
-  "description": "FlexSass Project For Mscit it-sem 2 ( i Am making project on Sass Front-End webTemplate )",
+  "description": "Front-end scss template.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp",
     "sass": "node-sass src/sass/main.scss dist/css/main.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver sass",
@@ -40,7 +40,7 @@
     "autoprefixer": "^9.5.0",
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
-    "gulp": "^4.0.1",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-dest-clean": "^0.5.0",
     "gulp-eslint": "^5.0.0",
@@ -53,6 +53,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
-    "jshint": "^2.10.2"
+    "jshint": "^2.10.2",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5"
   }
 }

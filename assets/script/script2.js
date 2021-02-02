@@ -1,0 +1,1 @@
+console.log("OkHello WorldFile Two NEw Gulp Syntax as per Version 4"),console.log("HeLlo ThereFile Two Heloer"),console.log("DoneWOKINGOKAy");
